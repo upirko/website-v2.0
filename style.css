@@ -1,24 +1,31 @@
-.s1_start-products {
-    position: static;
-    display: block;
-    height: 200vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #fff;
-  }
+.s1_content_text {
+  font-family: Akrobat;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #2f393f;
+}
 
-  
+@font-face {
+  font-family: "Akrobat";
+  src: url("fonts/Akrobat.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
