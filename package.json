@@ -1,0 +1,20 @@
+{
+  "name": "website-v2.0",
+  "version": "1.0.0",
+  "description": "Hello, everybody!\r In this project we will develop a new version of the site for our company. \r Layouts are already available and you can request them from Timofey.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natlex/website-v2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natlex/website-v2.0/issues"
+  },
+  "homepage": "https://github.com/natlex/website-v2.0#readme"
+}
