@@ -1,0 +1,18 @@
+/* Error: Indenting at the beginning of the document is illegal.
+ *   ,
+ * 1 |  /* slide 1 *∕
+ *   | ^
+ *   '
+ *   sass/_colors.sass 1:1  @import
+ *   sass/styles.sass 1:9   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Indenting at the beginning of the document is illegal.\a   \2577 \a 1 \2502   /* slide 1 */\a   \2502  ^\a   \2575 \a   sass/_colors.sass 1:1  @import\a   sass/styles.sass 1:9   root stylesheet";
+}
