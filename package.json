@@ -1,6 +1,6 @@
 {
   "name": "website-v2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hello, everybody!\r In this project we will develop a new version of the site for our company. \r Layouts are already available and you can request them from Timofey.",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,20 @@
     "url": "git+https://github.com/natlex/website-v2.0.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "natlex team",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/natlex/website-v2.0/issues"
   },
-  "homepage": "https://github.com/natlex/website-v2.0#readme"
+  "homepage": "https://github.com/natlex/website-v2.0#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "npm": "^6.14.4",
+    "semantic-ui-sass": "^2.4.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
+  }
 }
