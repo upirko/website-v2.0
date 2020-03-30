@@ -1,3 +1,149 @@
-h1 {
-    color: red;
+html, body {
+    font-size: $font-base-size;
+    position: relative;
+}
+body {
+    background: #fff url('../images/bg-splash-s1.svg') right 0 no-repeat;
+    background-size: auto 50vh;
+    @media screen and (min-width: 768px) {
+        background-size: auto 90vh;
+    }
+    @media screen and (min-width: 991px) {
+        background-size: auto 140vh;
+    }
+}
+
+.logo {
+    width: 10rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    .name {
+        margin-left: 0.5rem;
+    }
+}
+.top-navigation, 
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+.lang-list {
+    display: none;
+}
+.nav-box {
+    width: 100%;
+    position: relative;
+    min-height: $navigation-height;
+    .checkbox {
+        display: none;
+    }
+    .menu-list {
+        display: none;
+    }
+    .compact.menu.lang-list {
+        display: none;
+    }
+    @media screen and (min-width: 991px) {        
+        .menu-list {
+            display: flex;
+        }
+        .compact.menu.lang-list {
+            display: inline-flex;
+        }
+        .checkbox {
+            display: inline-block;
+        }
+    }
+}
+.menu-toggler {
+    position: absolute;
+    right: 0;
+    top: 0;    
+    .content {
+        display: block;
+    }
+    .close {
+        display: none;        
+    }
+    @media screen and (min-width: 991px) {
+        display: none;
+    }
+}
+.top-navigation {
+    padding: 1rem 1rem 0;
+    position: relative;
+    &.opened {
+        z-index: 50;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $bg-burger-color;
+        .logo {
+            display: none;
+        }
+        .nav-box {
+            color: #fff;
+            height: 90vh;
+            align-items: flex-start;
+        }
+        .menu-toggler {
+            -webkit-appearance: none;
+            background: transparent;
+            border: none;
+            color: #fff;
+            .content {
+                display: none;
+            }
+            .close {
+                display: block;
+            }
+        }
+        .menu-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .item {
+                padding: 1rem;
+                margin-bottom: 0.5rem;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .compact.menu.lang-list {
+            display: inline-flex;
+            .menu {
+                top: auto !important;
+                bottom: 100%;
+            }
+            .dropdown.icon {
+                display: none;
+            }
+        }
+        .checkbox {
+            display: inline-block;
+        }        
+        .lang-list, .checkbox {
+            align-self: flex-end;
+        }
+    }
+}
+header {    
+    margin-top: 3rem;
+    .people {        
+        width: 90vw;
+        height: 90vw * 0.8;
+        background-image: url('../images/bg-people-s1.svg');
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+
+    }
+}
+article { 
+    min-height: 100vh;     
+    &:nth-of-type(2n) {
+        background-color: $button-agree-color;
+    } 
 }

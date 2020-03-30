@@ -9,21 +9,148 @@
 </head>
 
 <body>
-    <section class="s1_start-products">
-        <div class="s1_bg_splash"></div>
-        <div class="s1_bg_people"></div>
-        <div class="s1-up">
-            <h1 class="s1_content_text">
-                выбери лучшую работу <br>
-                своей жизни <br> 
-                <span class="s1_text_green">как это сделали мы</span>
-            </h1>
+    <nav class="top-navigation"> <!-- add here class "opened" to show mobile menu -->
+        <div class="logo">
+            <img src="images/logo-natlex-e.svg" alt="Emblem" class="emblem">
+            <img src="images/logo-natlex-t.svg" alt="Natlex" class="name">
+        </div>
+        <div class="nav-box">            
+            <div class="ui toggle checkbox checked">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label><span class="ui label hidden">Light mode On/Off</span></label>
+            </div>
+            <div class="ui large secondary inverted text menu menu-list">
+                <a class="item" href="#">Item 1</a>
+                <a class="item" href="#">Item 2</a>
+                <a class="item" href="#">Item 3</a>
+                <a class="item" href="#">Item 4</a>
+                <a class="item" href="#">Item 5</a>
+                <a class="item" href="#">Item 6</a>
+            </div>
+            <div class="ui compact menu lang-list">
+                <div class="ui simple dropdown item">
+                    Rus
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">Rus</div>
+                        <div class="item">Eng</div>
+                        <div class="item">Ger</div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="menu-toggler">
+                <i class="content icon"></i>
+                <i class="close icon"></i>
+            </button>  
+        </div>
+    </nav>
+    <header class="ui container">
+        <div class="wrapper">            
+            <div class="people"></div>
+            <div class="text">
+                <h1>Создавай. Развивайся. <mark>Открывай новое.</mark></h1>
+                <div class="teaser"><a href="#" class="ui large basic button">Узнай больше</a></div>
+            </div>            
+        </div>
+    </header>
+    <main>
+        <article id="products">
+            <div class="ui content container">
+                <div class="ui stackable two column grid">
+                    <div class="four wide computer sixteen wide tablet column">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="ui header">excepteur sint</p>
+                    </div>
+                    <div class="twelve wide computer sixteen wide tablet column">
+                        <div class="ui stackable two column grid">
+                            <div class="column">
+                                <figure class="ui segment">
+                                    <img src="images/icon-s1-hook.svg" alt="" class="ui small image">
+                                    <figcaption>
+                                        <h3>Lorem Ipsum</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <figure class="ui segment">
+                                    <img src="images/icon-s1-tunnel.svg" alt="" class="ui small image">
+                                    <figcaption>
+                                        <h3>Lorem Ipsum</h3>                                    
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <figure class="ui segment">
+                                    <img src="images/icon-s1-sensor.svg" alt="" class="ui small image">
+                                    <figcaption>
+                                        <h3>Lorem Ipsum</h3>                                    
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                                    
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <figure class="ui segment">
+                                    <img src="images/icon-s1-network.svg" alt="" class="ui small image">
+                                    <figcaption>
+                                        <h3>Lorem Ipsum</h3>                                    
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-            <div class="module-border-wrap"><a href="#" class="s1_button ">Узнай больше</a></div>
-        </div>
-        <div class="s1_down">   
-        </div>
-    </section>
+        <article id="about"></article>
+
+        <article id="partner"></article>
+
+        <article class="double">
+            <section id="world"></section>
+            <section id="tech"></section>
+        </article>
+        
+        <article id="values"></article>
+
+        <article id="jobs"></article>
+
+        <article id="expect"></article>
+
+        <article id="trainee"></article>
+
+        <article id="feedback">
+            <nav>
+                <button type="button" class="active">Написать сообщение</button>
+                <button type="button" class="">Отправить резюме</button>
+            </nav>
+
+            <section class="ui stackable two column grid message active">
+                <div class="column">
+                    <form action=""></form>
+                </div>
+                <div class="column">
+                    <img src="" alt="">
+                </div>
+            </section>
+
+            <section class="cv">
+                <div class="column">
+                    <img src="" alt="">
+                </div>
+                <div class="column">
+                    <form action=""></form>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 

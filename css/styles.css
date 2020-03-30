@@ -7,10 +7,6 @@
 /* slide 6 - values*/
 /* slide 7 - join us*/
 /* slide 8 - expectations*/
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap&subset=cyrillic");
-h1 {
-  color: red; }
-
 /*!
  * # Semantic UI 2.4.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -24,6 +20,7 @@ h1 {
              Reset
 *******************************/
 /* Border-Box */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext");
 *,
 *:before,
 *:after {
@@ -466,7 +463,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -480,7 +477,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 1.28571429em;
   margin: calc(2rem -  0.14285714em) 0em 1rem;
   font-weight: bold;
@@ -638,7 +635,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   vertical-align: baseline;
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin: 0em 0.25em 0em 0em;
   padding: 0.78571429em 1.5em 0.78571429em;
   text-transform: none;
@@ -4332,7 +4329,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 *******************************/
 /* Text Container */
 .ui.text.container {
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   max-width: 700px !important;
   line-height: 1.5; }
 
@@ -5628,7 +5625,7 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285714em) 0em 1rem;
   padding: 0em 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.28571429em;
   text-transform: none;
@@ -6254,8 +6251,8 @@ a.ui.inverted.grey.header:hover {
 *******************************/
 @font-face {
   font-family: 'Icons';
-  src: url("../../icons/icons.eot");
-  src: url("../../icons/icons.eot?#iefix") format("embedded-opentype"), url("../../icons/icons.woff2") format("woff2"), url("../../icons/icons.woff") format("woff"), url("../../icons/icons.ttf") format("truetype"), url("../../icons/icons.svg#icons") format("svg");
+  src: url("../node_modules/semantic-ui-sass/icons/icons.eot");
+  src: url("../node_modules/semantic-ui-sass/icons/icons.eot?#iefix") format("embedded-opentype"), url("../node_modules/semantic-ui-sass/icons/icons.woff2") format("woff2"), url("../node_modules/semantic-ui-sass/icons/icons.woff") format("woff"), url("../node_modules/semantic-ui-sass/icons/icons.ttf") format("truetype"), url("../node_modules/semantic-ui-sass/icons/icons.svg#icons") format("svg");
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -10240,8 +10237,8 @@ i.icon.youtube.play:before {
 /* Load & Define Icon Font */
 @font-face {
   font-family: 'outline-icons';
-  src: url("../../icons/outline-icons.eot");
-  src: url("../../icons/outline-icons.eot?#iefix") format("embedded-opentype"), url("../../icons/outline-icons.woff2") format("woff2"), url("../../icons/outline-icons.woff") format("woff"), url("../../icons/outline-icons.ttf") format("truetype"), url("../../icons/outline-icons.svg#icons") format("svg");
+  src: url("../node_modules/semantic-ui-sass/icons/outline-icons.eot");
+  src: url("../node_modules/semantic-ui-sass/icons/outline-icons.eot?#iefix") format("embedded-opentype"), url("../node_modules/semantic-ui-sass/icons/outline-icons.woff2") format("woff2"), url("../node_modules/semantic-ui-sass/icons/outline-icons.woff") format("woff"), url("../node_modules/semantic-ui-sass/icons/outline-icons.ttf") format("truetype"), url("../node_modules/semantic-ui-sass/icons/outline-icons.svg#icons") format("svg");
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -10620,8 +10617,8 @@ i.icon.star.empty:before {
 /* Load & Define Brand Font */
 @font-face {
   font-family: 'brand-icons';
-  src: url("../../icons/brand-icons.eot");
-  src: url("../../icons/brand-icons.eot?#iefix") format("embedded-opentype"), url("../../icons/brand-icons.woff2") format("woff2"), url("../../icons/brand-icons.woff") format("woff"), url("../../icons/brand-icons.ttf") format("truetype"), url("../../icons/brand-icons.svg#icons") format("svg");
+  src: url("../node_modules/semantic-ui-sass/icons/brand-icons.eot");
+  src: url("../node_modules/semantic-ui-sass/icons/brand-icons.eot?#iefix") format("embedded-opentype"), url("../node_modules/semantic-ui-sass/icons/brand-icons.woff2") format("woff2"), url("../node_modules/semantic-ui-sass/icons/brand-icons.woff") format("woff"), url("../node_modules/semantic-ui-sass/icons/brand-icons.ttf") format("truetype"), url("../node_modules/semantic-ui-sass/icons/brand-icons.svg#icons") format("svg");
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -11273,7 +11270,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.21428571em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   padding: 0.67857143em 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -12986,7 +12983,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87); }
 
@@ -15081,7 +15078,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -17716,7 +17713,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -19541,7 +19538,7 @@ Floated Menu / Item
 /* Header */
 .ui.message .header {
   display: block;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: -0.14285714em 0em 0rem 0em; }
 
@@ -21106,7 +21103,7 @@ Floated Menu / Item
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.85); }
 
 /* Default Header Size */
@@ -21948,7 +21945,7 @@ a.ui.card:hover,
 .ui.items > .item > .content > .header {
   display: inline-block;
   margin: -0.21425em 0em 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85); }
 
@@ -22259,7 +22256,7 @@ a.ui.card:hover,
 /* Default Styling */
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.87); }
 
@@ -24741,7 +24738,7 @@ select.ui.dropdown {
 ---------------*/
 .ui.modal > .header {
   display: block;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -25344,7 +25341,7 @@ a.ui.nag {
 
 .ui.popup > .header {
   padding: 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1.14285714em;
   line-height: 1.2;
   font-weight: bold; }
@@ -26543,7 +26540,7 @@ a.ui.nag {
 
 .ui.search > .results .result .title {
   margin: -0.14285714em 0em 0em;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85); }
@@ -26564,7 +26561,7 @@ a.ui.nag {
   padding: 1em 1em; }
 
 .ui.search > .results > .message .header {
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87); }
@@ -26740,7 +26737,7 @@ a.ui.nag {
   width: 100px;
   white-space: nowrap;
   background: transparent;
-  font-family: "Rubik", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1em;
   padding: 0.4em 1em;
   font-weight: bold;
@@ -29330,6 +29327,143 @@ body.pushable > .pusher {
 /*******************************
          Site Overrides
 *******************************/
+.flex {
+  display: flex; }
+  .flex-x {
+    flex-direction: row;
+    align-items: center; }
+  .flex-y {
+    flex-direction: column;
+    justify-content: space-between; }
+  .flex-nowrap {
+    flex-wrap: nowrap; }
+  .flex-grow {
+    flex: 1 0 auto; }
+  .flex-shrink {
+    flex-shrink: 0 1 auto; }
+
+html, body {
+  font-size: 16px;
+  position: relative; }
+
+body {
+  background: #fff url("../images/bg-splash-s1.svg") right 0 no-repeat;
+  background-size: auto 50vh; }
+  @media screen and (min-width: 768px) {
+    body {
+      background-size: auto 90vh; } }
+  @media screen and (min-width: 991px) {
+    body {
+      background-size: auto 140vh; } }
+
+.logo {
+  width: 10rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center; }
+  .logo .name {
+    margin-left: 0.5rem; }
+
+.top-navigation,
+.nav-box {
+  display: flex;
+  align-items: center; }
+
+.lang-list {
+  display: none; }
+
+.nav-box {
+  width: 100%;
+  position: relative;
+  min-height: 3rem; }
+  .nav-box .checkbox {
+    display: none; }
+  .nav-box .menu-list {
+    display: none; }
+  .nav-box .compact.menu.lang-list {
+    display: none; }
+  @media screen and (min-width: 991px) {
+    .nav-box .menu-list {
+      display: flex; }
+    .nav-box .compact.menu.lang-list {
+      display: inline-flex; }
+    .nav-box .checkbox {
+      display: inline-block; } }
+
+.menu-toggler {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .menu-toggler .content {
+    display: block; }
+  .menu-toggler .close {
+    display: none; }
+  @media screen and (min-width: 991px) {
+    .menu-toggler {
+      display: none; } }
+
+.top-navigation {
+  padding: 1rem 1rem 0;
+  position: relative; }
+  .top-navigation.opened {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2F393F; }
+    .top-navigation.opened .logo {
+      display: none; }
+    .top-navigation.opened .nav-box {
+      color: #fff;
+      height: 90vh;
+      align-items: flex-start; }
+    .top-navigation.opened .menu-toggler {
+      -webkit-appearance: none;
+      background: transparent;
+      border: none;
+      color: #fff; }
+      .top-navigation.opened .menu-toggler .content {
+        display: none; }
+      .top-navigation.opened .menu-toggler .close {
+        display: block; }
+    .top-navigation.opened .menu-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      .top-navigation.opened .menu-list .item {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        justify-content: center; }
+    .top-navigation.opened .compact.menu.lang-list {
+      display: inline-flex; }
+      .top-navigation.opened .compact.menu.lang-list .menu {
+        top: auto !important;
+        bottom: 100%; }
+      .top-navigation.opened .compact.menu.lang-list .dropdown.icon {
+        display: none; }
+    .top-navigation.opened .checkbox {
+      display: inline-block; }
+    .top-navigation.opened .lang-list, .top-navigation.opened .checkbox {
+      align-self: flex-end; }
+
+header {
+  margin-top: 3rem; }
+  header .people {
+    width: 90vw;
+    height: 72vw;
+    background-image: url("../images/bg-people-s1.svg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+
+article {
+  min-height: 100vh; }
+  article:nth-of-type(2n) {
+    background-color: #CDCFD0; }
+
 .test-bull-shit-of-course {
   background-color: #F4F5F7; }
 
