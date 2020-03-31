@@ -4,28 +4,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Natlex</title>
 </head>
 
 <body>
-    <section class="s1_start-products">
-        <div class="s1_bg_splash"></div>
-        <div class="s1_bg_people"></div>
-        <div class="s1-up">
-            <h1 class="s1_content_text">
-                выбери лучшую работу <br>
-                своей жизни <br> 
-                <span class="s1_text_green">как это сделали мы</span>
-            </h1>
+     <!-- change here class to "top-navigation sticky opened" to show mobile menu -->
+    <nav class="top-navigation sticky">
+        <div class="logo">
+            <img src="images/logo-natlex-e.svg" alt="Emblem" class="emblem">
+            <img src="images/logo-natlex-t.svg" alt="Natlex" class="name">
+        </div>
+        <div class="nav-box">            
+            <div class="ui toggle checkbox checked">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label><span class="ui label hidden">Light mode On/Off</span></label>
+            </div>
+            <div class="ui large secondary inverted text menu menu-list">
+                <a class="item" href="#">Item 1</a>
+                <a class="item" href="#">Item 2</a>
+                <a class="item" href="#">Item 3</a>
+                <a class="item" href="#">Item 4</a>
+                <a class="item" href="#">Item 5</a>
+                <a class="item" href="#">Item 6</a>
+            </div>
+            <div class="ui compact menu lang-list">
+                <div class="ui simple dropdown item">
+                    Rus
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">Rus</div>
+                        <div class="item">Eng</div>
+                        <div class="item">Ger</div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="menu-toggler">
+                <i class="content icon"></i>
+                <i class="close icon"></i>
+            </button>  
+        </div>
+    </nav>
+    
+    <header>
+        <div class="wrapper section-top">
+            <div class="people">
+                <img src="images/bg-people-s1.svg" alt="Natlex people">
+            </div>
+            <div class="text">
+                <h1>Создавай. Развивайся.<br><span class="highlight">Открывай новое.</span></h1>
+                <div class="teaser"><a href="#" class="ui large basic button">Узнай больше</a></div>
+            </div>
+        </div>
+        <div class="wrapper section-bottom">
+            <div class="ui stackable two column grid">
+                <div class="four wide computer sixteen wide tablet column">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="ui header">excepteur sint</p>
+                </div>
+                <div class="twelve wide computer sixteen wide tablet column">
+                    <div class="ui stackable two column grid">
+                        <div class="column">
+                            <figure class="ui segment flex">
+                                <img src="images/icon-s1-hook.svg" alt="" class="ui small image">
+                                <figcaption>
+                                    <h3>Lorem Ipsum</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure class="ui segment flex">
+                                <img src="images/icon-s1-tunnel.svg" alt="" class="ui small image">
+                                <figcaption>
+                                    <h3>Lorem Ipsum</h3>                                    
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure class="ui segment flex">
+                                <img src="images/icon-s1-sensor.svg" alt="" class="ui small image">
+                                <figcaption>
+                                    <h3>Lorem Ipsum</h3>                                    
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                                    
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure class="ui segment flex">
+                                <img src="images/icon-s1-network.svg" alt="" class="ui small image">
+                                <figcaption>
+                                    <h3>Lorem Ipsum</h3>                                    
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article id="about" class="ui inverted vertical segment">
+            <h2 class="ui center aligned header">Кто мы</h2>
 
-            <div class="module-border-wrap"><a href="#" class="s1_button ">Узнай больше</a></div>
-        </div>
-        <div class="s1_down">   
-        </div>
+                <section class="ui center aligned text container">
+                    <div class="ui divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="ui divider"></div>
+                </section>
+
+                <section class="ui center aligned text container">
+                    <p class="center aligned">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+
+                <section class="ui text container">
+                    <h3 class="ui center aligned header">Кратко о нас</h3>
+                    <div class="ui stackable two column grid">
+                        <div class="column">
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Consectetur adipiscing elit</p>
+                            <p>Eiusmod tempor incididunt ut labore</p>
+                        </div>
+                        <div class="column">
+                            <p>Eiusmod tempor incididunt ut labore</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </section>
+        </article>
+
+        <article id="partner">
+            <h2 class="ui center aligned header">Наш партнер</h2>
+            <div class="ui center aligned text container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </article>
+
+        <article class="double">
+            <section id="world">
+                <h2 class="ui center aligned header">наши продукты <br>работают по всему миру</h2>                
+            </section>
+            <section id="tech">
+                <h3>Технологии,</h3>
+                <p>которые мы используем</p>
+            </section>
+        </article>
         
-        
-    </section>
+        <article id="values">
+            <h2 class="ui center aligned header">Наши ценности</h2>
+            <div class="ui stackable two column grid container">
+                <div class="row">
+                    <div class="column"><div class="ui segment">pic</div></div>
+                    <div class="column"><div class="ui segment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                </div>
+                <div class="row">
+                    <div class="column"><div class="ui segment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                    <div class="column"><div class="ui segment">pic</div></div>
+                </div>
+                <div class="row">
+                    <div class="column"><div class="ui segment">pic</div></div>
+                    <div class="column"><div class="ui segment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div>
+                </div>
+            </div>
+        </article>
+
+        <article id="jobs">
+            <h2 class="ui center aligned header">Работай с нами</h2>
+            <div class="ui content container">
+                <div class="ui stackable two columns grid">
+                    <div class="six wide column">
+                      <div class="ui vertical fluid tabular menu">
+                        <a class="active item">
+                          Bio
+                        </a>
+                        <a class="item">
+                          Pics
+                        </a>
+                        <a class="item">
+                          Companies
+                        </a>
+                        <a class="item">
+                          Links
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ten wide stretched column">
+                      <div class="ui segment">
+                        This is an stretched grid column. This segment will always match the tab height
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </article>
+
+        <article id="expect">            
+            <div class="ui content container">
+                <div class="ui stackable two column grid">
+                    <div class="column">
+                        <img src="images/logo-natlex-triangle.svg" alt="Мы ожидаем">
+                    </div>
+                    <div class="column">
+                        <section>
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                        <section>
+                            <h4>Ipsum</h4>
+                            <p>c</p>
+                        </section>
+                        <section>
+                            <h4>Dolor</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="trainee">
+            <h2 class="ui center aligned header">Стажировка</h2>
+            <div class="ui center aligned text container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </article>
+
+        <article id="feedback" class="feedback">
+            <div class="ui content container">
+                <div class="ui secondary menu" role="menu">
+                    <a href="#" class="item active">
+                        Написать сообщение
+                    </a>
+                    <a href="#" class="item">
+                        Отправить резюме
+                    </a>                    
+                </div>
+               
+    
+                <section class="ui stackable two column grid message active">
+                    <div class="column">
+                        <form class="ui form">
+                            <div class="field">
+                              <label>First Name</label>
+                              <input type="text" name="first-name" placeholder="First Name">
+                            </div>
+                            <div class="field">
+                              <label>Last Name</label>
+                              <input type="text" name="last-name" placeholder="Last Name">
+                            </div>
+                            <div class="field">
+                              <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>I agree to the Terms and Conditions</label>
+                              </div>
+                            </div>
+                            <button class="ui button" type="submit">Submit</button>
+                          </form>
+                    </div>
+                    <div class="column">
+                        <img src="images/bg-request-people-right.svg" alt="">
+                    </div>
+                </section>
+    
+                <section class="ui stackable two column grid cv" style="display: none;">
+                    <div class="column">
+                        <img src="images/bg-request-people-left.svg" alt="">
+                    </div>
+                    <div class="column">
+                        <form action=""></form>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="ui stackable three columns grid">
+            <div class="column phone">+7 123 213-13-23</div>
+            <div class="column address">Lorem ipsum dolor sit amet <br>consectetur adipiscing elit</div>
+            <div class="column social-icons">
+
+                <div class="ui icon secondary menu">
+                    <a class="item"><i class="twitter icon"></i></a>
+                    <a class="item"><i class="facebook icon"></i></a>
+                    <a class="item"><i class="instagram icon"></i></a>
+                </div>
+                  
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

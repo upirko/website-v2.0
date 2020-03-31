@@ -9,3 +9,8 @@ On the agenda...
 2) adaptive version of the site (we estimate how to stretch elements, etc.), and also we focus on design for mobile versions.
 3) Timofey suggested a "mobile first" approach - we should try it.
 4) Finishing with the layout, we introduce a change of language for the web page, as well as a "dark theme" (OMG!)
+
+Initial config:
+1. Run "npm i"
+2. Run "gulp sass"
+3. Open index.html in your browser to check that markup works correctly.
