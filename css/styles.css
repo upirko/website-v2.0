@@ -7,6 +7,7 @@
 /* slide 6 - values*/
 /* slide 7 - join us*/
 /* slide 8 - expectations*/
+/*!
  * # Semantic UI 2.4.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -26,6 +27,12 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* iPad Input Shadows */
+input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="password"] {
@@ -29339,23 +29346,17 @@ html, body {
   font-size: 16px;
   position: relative; }
 
-body {
-  background: #fff url("../images/bg-splash-s1.svg") right 0 no-repeat;
-  background-size: auto 50vh; }
-  @media screen and (min-width: 768px) {
-    body {
-      background-size: auto 90vh; } }
-  @media screen and (min-width: 991px) {
-    body {
-      background-size: auto 140vh; } }
-
 .logo {
   width: 10rem;
   flex-shrink: 0;
   display: flex;
   align-items: center; }
   .logo .name {
-    margin-left: 0.5rem; }
+    display: none;
+    margin-left: 1rem; }
+    @media screen and (min-width: 480px) {
+      .logo .name {
+        display: inline-block; } }
 
 .top-navigation,
 .nav-box {
@@ -29377,16 +29378,26 @@ body {
     display: none; }
   @media screen and (min-width: 991px) {
     .nav-box .menu-list {
-      display: flex; }
+      display: flex;
+      flex: 1;
+      justify-content: flex-end; }
     .nav-box .compact.menu.lang-list {
-      display: inline-flex; }
+      display: inline-flex;
+      margin-left: 2rem; }
     .nav-box .checkbox {
       display: inline-block; } }
 
 .menu-toggler {
-  position: absolute;
+  top: 0;
   right: 0;
-  top: 0; }
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #FFF;
+  padding: 0.5rem;
+  padding-right: 0.3rem;
+  font-size: 1.3rem; }
   .menu-toggler .content {
     display: block; }
   .menu-toggler .close {
@@ -29398,37 +29409,39 @@ body {
 .top-navigation {
   padding: 1rem 1rem 0;
   position: relative; }
-  .top-navigation.opened {
-    z-index: 50;
+  .top-navigation.sticky {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 3; }
+  .top-navigation.opened {
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
+    align-items: flex-start;
     background-color: #2F393F; }
     .top-navigation.opened .logo {
       display: none; }
     .top-navigation.opened .nav-box {
-      color: #fff;
-      height: 90vh;
+      color: #FFF;
+      height: calc(100% - 1rem);
       align-items: flex-start; }
-    .top-navigation.opened .menu-toggler {
-      -webkit-appearance: none;
-      background: transparent;
-      border: none;
-      color: #fff; }
-      .top-navigation.opened .menu-toggler .content {
-        display: none; }
-      .top-navigation.opened .menu-toggler .close {
-        display: block; }
+    .top-navigation.opened .menu-toggler .content {
+      display: none; }
+    .top-navigation.opened .menu-toggler .close {
+      display: block; }
     .top-navigation.opened .menu-list {
       flex: 1;
       display: flex;
+      margin-top: 2rem;
       flex-direction: column; }
       .top-navigation.opened .menu-list .item {
+        width: 100%;
         padding: 1rem;
         margin-bottom: 0.5rem;
-        width: 100%;
         justify-content: center; }
     .top-navigation.opened .compact.menu.lang-list {
       display: inline-flex; }
@@ -29441,21 +29454,125 @@ body {
       display: inline-block; }
     .top-navigation.opened .lang-list, .top-navigation.opened .checkbox {
       align-self: flex-end; }
+  @media screen and (min-width: 768px) {
+    .top-navigation {
+      padding: 2rem 2rem 0 3rem; } }
 
 header {
-  margin-top: 3rem; }
+  padding-top: 8rem;
+  position: relative;
+  z-index: 1;
+  background-color: #F9FAFB; }
+  header::before, header::after {
+    top: 0;
+    right: 0;
+    left: 0;
+    content: '';
+    position: absolute; }
+  header::before {
+    z-index: 1;
+    height: 668px;
+    background: #FFF; }
+  header::after {
+    z-index: 2;
+    bottom: 0;
+    margin: auto;
+    background: transparent url("../images/bg-splash-s1.svg") right 0 no-repeat;
+    background-size: 75vw auto; }
+  header .section-top {
+    height: 540px; }
+  header .section-bottom {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
   header .people {
-    width: 90vw;
-    height: 72vw;
-    background-image: url("../images/bg-people-s1.svg");
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px; }
+    header .people img {
+      display: block;
+      min-width: 100%;
+      min-height: 100%;
+      max-height: 65vh; }
+  header .text {
+    text-align: center;
+    margin-top: 2rem; }
+  header .wrapper {
+    z-index: 3;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  @media screen and (orientation: landscape) {
+    header::before {
+      height: 748px; }
+    header .section-top {
+      height: 620px; } }
+  @media screen and (min-width: 768px) {
+    header::before {
+      min-height: 670px; }
+    header .people {
+      padding-left: 1rem; }
+    header .text {
+      flex: 1;
+      margin-top: 0;
+      text-align: left; }
+    header .wrapper {
+      padding-left: 3rem;
+      padding-right: 2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse; }
+    header .section-top {
+      height: 542px; } }
+  @media screen and (min-width: 991px) {
+    header::before {
+      min-height: 90vh; }
+    header .people {
+      width: 64%;
+      max-width: 100%; }
+      header .people img {
+        max-height: 70vh; }
+    header .text {
+      padding-left: 2rem; }
+    header .section-top {
+      max-width: 90vw;
+      height: calc(90vh - 8rem); } }
+  @media screen and (min-width: 991px) and (orientation: portrait) {
+    header .section-top {
+      max-width: 100%; } }
 
 article {
   min-height: 100vh; }
   article:nth-of-type(2n) {
     background-color: #CDCFD0; }
+  article, article.inverted.segment {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+  @media screen and (min-width: 768px) {
+    article, article.inverted.segment {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+
+footer {
+  padding: 4rem; }
+  footer .column {
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+      footer .phone {
+        text-align: left;
+        order: 1; }
+      footer .address {
+        text-align: right;
+        order: 3; }
+      footer .social-icons {
+        order: 2; }
+        footer .social-icons .menu {
+          justify-content: center; } }
 
 .test-bull-shit-of-course {
   background-color: #F4F5F7; }

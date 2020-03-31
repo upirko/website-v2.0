@@ -2,24 +2,17 @@ html, body {
     font-size: $font-base-size;
     position: relative;
 }
-body {
-    background: #fff url('../images/bg-splash-s1.svg') right 0 no-repeat;
-    background-size: auto 50vh;
-    @media screen and (min-width: 768px) {
-        background-size: auto 90vh;
-    }
-    @media screen and (min-width: 991px) {
-        background-size: auto 140vh;
-    }
-}
-
 .logo {
     width: 10rem;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     .name {
-        margin-left: 0.5rem;
+        display: none;
+        margin-left: 1rem;
+        @media screen and (min-width: 480px) {
+            display: inline-block;
+        }
     }
 }
 .top-navigation, 
@@ -46,9 +39,12 @@ body {
     @media screen and (min-width: 991px) {        
         .menu-list {
             display: flex;
+            flex: 1;
+            justify-content: flex-end;
         }
         .compact.menu.lang-list {
             display: inline-flex;
+            margin-left: 2rem;
         }
         .checkbox {
             display: inline-block;
@@ -56,9 +52,16 @@ body {
     }
 }
 .menu-toggler {
-    position: absolute;
+    top: 0;
     right: 0;
-    top: 0;    
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: $text-button-s2-color;
+    padding: 0.5rem;
+    padding-right: 0.3rem;
+    font-size: 1.3rem;
     .content {
         display: block;
     }
@@ -72,27 +75,30 @@ body {
 .top-navigation {
     padding: 1rem 1rem 0;
     position: relative;
-    &.opened {
-        z-index: 50;
+    &.sticky {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+        z-index: 3;
+    }
+    &.opened {
+        z-index: 50;
+        top: 0;
+        left: 0;
+        right: 0;
         bottom: 0;
+        align-items: flex-start;
         background-color: $bg-burger-color;
         .logo {
             display: none;
         }
         .nav-box {
-            color: #fff;
-            height: 90vh;
+            color: $text-button-s2-color;
+            height: calc(100% - 1rem);
             align-items: flex-start;
         }
         .menu-toggler {
-            -webkit-appearance: none;
-            background: transparent;
-            border: none;
-            color: #fff;
             .content {
                 display: none;
             }
@@ -103,11 +109,12 @@ body {
         .menu-list {
             flex: 1;
             display: flex;
+            margin-top: 2rem;
             flex-direction: column;
             .item {
+                width: 100%;
                 padding: 1rem;
                 margin-bottom: 0.5rem;
-                width: 100%;
                 justify-content: center;
             }
         }
@@ -128,22 +135,158 @@ body {
             align-self: flex-end;
         }
     }
-}
-header {    
-    margin-top: 3rem;
-    .people {        
-        width: 90vw;
-        height: 90vw * 0.8;
-        background-image: url('../images/bg-people-s1.svg');
-        background-size: cover;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-
+    @media screen and (min-width: 768px) {
+        padding: 2rem 2rem 0 3rem;
     }
 }
-article { 
-    min-height: 100vh;     
+header {    
+    padding-top: 8rem;
+    position: relative;
+    z-index: 1;
+    background-color: $bg-s1-bottom-color;
+    &::before, &::after {        
+        top: 0;
+        right: 0;
+        left: 0;
+        content: '';        
+        position: absolute;
+    }
+    &::before {        
+        z-index: 1;
+        height: 668px;
+        background: $text-button-s2-color;
+    }
+    &::after {        
+        z-index: 2; 
+        bottom: 0;
+        margin: auto;
+        background: transparent url('../images/bg-splash-s1.svg') right 0 no-repeat;
+        background-size: 75vw auto;
+    }
+    .section-top {        
+        height: 540px;
+    }
+    .section-bottom {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .people {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 500px;
+        img {
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            max-height: 65vh;
+        }
+    }
+    .text {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .wrapper {
+        z-index: 3;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media screen and (orientation: landscape) {
+        &::before {
+            height: 748px;
+        }
+        .section-top {
+            height: 620px;
+        }
+    }       
+    @media screen and (min-width: 768px) {       
+        &::before {
+            min-height: 670px;
+        }
+        .people {
+            padding-left: 1rem;
+        }
+        .text {
+            flex: 1;
+            margin-top: 0;
+            text-align: left;
+        }    
+        .wrapper {
+            padding-left: 3rem;
+            padding-right: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+        .section-top {
+            height: 542px;
+        }
+    }
+    @media screen and (min-width: 991px) {        
+        &::before {
+            min-height: 90vh;
+        }       
+        .people {
+            width: 64%;
+            max-width: 100%;
+            img {
+                max-height: 70vh;
+            }
+        }
+        .text {
+            padding-left: 2rem;
+        }
+        .section-top {
+            max-width: 90vw;
+            height: calc(90vh - 8rem);
+        }
+    }
+    @media screen and (min-width: 991px) and (orientation: portrait) {
+        .section-top {
+            max-width: 100%;
+        }
+    }
+}
+article {    
+    min-height: 100vh; // todo remove    
     &:nth-of-type(2n) {
         background-color: $button-agree-color;
+    }
+    &, &.inverted.segment {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @media screen and (min-width: 768px) {
+        &, &.inverted.segment {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     } 
+}
+footer {
+    padding: 4rem;    
+    .column {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .phone {
+            text-align: left;
+            order: 1;
+        }
+        .address {
+            text-align: right;
+            order: 3;
+        }
+        .social-icons {
+            order: 2;
+            .menu {
+                justify-content: center;
+            }
+        }
+    }
 }
