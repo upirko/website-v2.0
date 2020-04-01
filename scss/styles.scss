@@ -1,15 +1,6 @@
-@import '_colors';
-@import '_fonts';
-@import '_variables';
-
-
-test-bull-shit-of-course {
-  background-color: $text-menu-color-black;
-}
-
-
-module-border-wrap {
-  width: 30 + 45%;
-  height: 10px - 1;
-  background: linear-gradient($boarder-button-grad);
-}
+@import "colors";
+@import "semantic-ui-config";
+@import "variables";
+@import "fonts";
+@import "helpers";
+@import "layout";

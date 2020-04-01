@@ -6,7 +6,7 @@ const watch = require('gulp-watch');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./scss/**/*.scss')
     .pipe(sourcemaps.init())
         .pipe(sass({            
             includePaths: ['./node_modules']
@@ -16,5 +16,5 @@ gulp.task('sass', function () {
 })
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/*.scss', gulp.series('sass'));
+    gulp.watch('./scss/**/*.scss', gulp.series('sass'));
 });
