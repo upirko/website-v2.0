@@ -56,3 +56,12 @@ $icons-font-path: '../node_modules/semantic-ui-sass/icons';
 @import 'semantic-ui-sass/scss/modules/tab';
 @import 'semantic-ui-sass/scss/modules/transition';
 // @import 'semantic-ui-sass/scss/modules/video';
+
+$font-base-name: 'rubik';
+$font-base-size: 16px;
+$font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap&subset=cyrillic';
+$font-family: $font-base-name, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
+$font-headings-name: 'akrobat';
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-headings-name;
+}

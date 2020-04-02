@@ -7,6 +7,7 @@
 /* slide 6 - values*/
 /* slide 7 - join us*/
 /* slide 8 - expectations*/
+/* slide  - forms*/
 /*!
  * # Semantic UI 2.4.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -29327,6 +29328,64 @@ body.pushable > .pusher {
 /*******************************
          Site Overrides
 *******************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "akrobat"; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap&subset=cyrillic"); }
+
+@font-face {
+  font-family: "akrobat";
+  src: url("../fonts/akrobat.woff2") format("woff2"), url("../fonts/akrobat.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+h1 
+font-family: Akrobat;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 43px;
+
+p body
+font-family: Rubik;
+font-style: normal;
+font-weight: 300;
+font-size: 18px; 16 
+line-height: 24px;
+1
+font-family: Akrobat;
+font-weight: 500, 600
+font-size: 24px, 36px, 
+line-height: 140%, 133%
+
+font-family: Rubik;
+font-weight: 300, 500,
+font-size: 21px, 18px, 16px, 14px, 12
+line-height: 14 19px, 21px, 24px
+letter-spacing: -0.05em;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 32px;
+
+
+
+
+
+
+
+*/
 .flex {
   display: flex; }
   .flex-x {
@@ -29343,6 +29402,7 @@ body.pushable > .pusher {
     flex-shrink: 0 1 auto; }
 
 html, body {
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 16px;
   position: relative; }
 
@@ -29459,6 +29519,7 @@ html, body {
       padding: 2rem 2rem 0 3rem; } }
 
 header {
+  font-family: akrobat;
   padding-top: 8rem;
   position: relative;
   z-index: 1;
@@ -29495,8 +29556,16 @@ header {
       min-height: 100%;
       max-height: 65vh; }
   header .text {
+    text-transform: uppercase;
     text-align: center;
     margin-top: 2rem; }
+    header .text h1 {
+      font-family: akrobat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      color: #2F393F; }
   header .wrapper {
     z-index: 3;
     position: relative;
@@ -29553,7 +29622,14 @@ article {
   @media screen and (min-width: 768px) {
     article, article.inverted.segment {
       padding-top: 6rem;
-      padding-bottom: 6rem; } }
+      padding-bottom: 6rem; }
+      article h2, article.inverted.segment h2 {
+        font-family: akrobat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 43px;
+        color: #4C98; } }
 
 footer {
   padding: 4rem; }
@@ -29573,13 +29649,5 @@ footer {
         order: 2; }
         footer .social-icons .menu {
           justify-content: center; } }
-
-.test-bull-shit-of-course {
-  background-color: #F4F5F7; }
-
-.module-border-wrap {
-  width: 75%;
-  height: 9px;
-  background: linear-gradient(180deg, #69DD94, #39B698, #058E96); }
 
 /*# sourceMappingURL=styles.css.map */
