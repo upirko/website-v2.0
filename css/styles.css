@@ -29502,7 +29502,8 @@ html, body {
         width: 100%;
         padding: 1rem;
         margin-bottom: 0.5rem;
-        justify-content: center; }
+        justify-content: center;
+        color: #F4F5F7; }
     .top-navigation.opened .compact.menu.lang-list {
       display: inline-flex; }
       .top-navigation.opened .compact.menu.lang-list .menu {
@@ -29564,8 +29565,12 @@ header {
       font-style: normal;
       font-weight: 500;
       font-size: 36px;
-      line-height: 43px;
-      color: #2F393F; }
+      color: #2F393F;
+      text-transform: uppercase; }
+      header .text h1 span {
+        color: #4C9988; }
+  header .teaser a {
+    color: #4C9988; }
   header .wrapper {
     z-index: 3;
     position: relative;
@@ -29629,7 +29634,7 @@ article {
         font-weight: 500;
         font-size: 36px;
         line-height: 43px;
-        color: #4C98; } }
+        color: #40C8B2; } }
 
 footer {
   padding: 4rem; }
