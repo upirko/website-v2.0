@@ -5,11 +5,11 @@ $icons-font-path: '../node_modules/semantic-ui-sass/icons';
 @import 'semantic-ui-sass/scss/globals/site';
 
 // elements
-@import 'semantic-ui-sass/scss/elements/button';
+//@import 'semantic-ui-sass/scss/elements/button';
 @import 'semantic-ui-sass/scss/elements/container';
 @import 'semantic-ui-sass/scss/elements/divider';
 @import 'semantic-ui-sass/scss/elements/flag';
-@import 'semantic-ui-sass/scss/elements/header';
+//@import 'semantic-ui-sass/scss/elements/header';
 @import 'semantic-ui-sass/scss/elements/icon';
 @import 'semantic-ui-sass/scss/elements/image';
 @import 'semantic-ui-sass/scss/elements/input';
@@ -59,9 +59,20 @@ $icons-font-path: '../node_modules/semantic-ui-sass/icons';
 
 $font-base-name: 'rubik';
 $font-base-size: 16px;
-$font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap&subset=cyrillic';
+//$font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap&subset=cyrillic';
 $font-family: $font-base-name, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
-$font-headings-name: 'akrobat';
-h1, h2, h3, h4, h5, h6 {
+$font-headings-name: 'akrobat600';
+h1 {
     font-family: $font-headings-name;
+}
+h2 {
+    font-family: akrobat600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: rubik500;
 }
