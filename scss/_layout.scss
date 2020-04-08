@@ -33,6 +33,16 @@ html, body {
     }
     .menu-list {
         display: none;
+        
+        
+        .menu-item{
+            color:$text-white;
+            font-family: rubik300;
+            margin: 0.9rem 0.9rem;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
     .compact.menu.lang-list {
         display: none;
@@ -117,7 +127,6 @@ html, body {
                 padding: 1rem;
                 margin-bottom: 0.5rem;
                 justify-content: center;
-                color: $text-menu-color-black;
             }
         }
         .compact.menu.lang-list {
@@ -186,16 +195,18 @@ header {
         }
     }
     .text {
-        text-transform: uppercase;
+        
         text-align: center;
         margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h1 {
             font-family: $h1-font-family;
-            font-style: $h1-font-style;
-            font-weight: $h1-font-weight;
-            font-size: $h1-font-size;
-            color: $h1-black-color; 
+            font-style: $text-green;
+             
             text-transform: uppercase;
 
             span {
@@ -203,11 +214,84 @@ header {
             }
         }
     }
-    .teaser {
-        a {
-            color: $text-green-color;
+    .button-gradborder-wrap {
+        display: flex;
+        justify-content: center;
+        height: 48px;
+        min-width: 256px;
+        border-radius: 24px;
+        padding: 1px;
+        background: linear-gradient(180deg, #69DD94, #39B698, #058E96);
+        margin-bottom: 14%;
+
+
+        .teaser-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border-radius: 25px;
+            font-family: rubik300;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: -0.05em;
+            color: $text-green;
+            background-color: white;
+            text-decoration: none;  
+          }
+
+        @media screen and (min-width: $desktop-width ) {
+            margin-left: 0;
+            margin-right: auto;
         }
+      }
+    .text-create {
+        text-align: center;
+        font-family: rubik300;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        color: $text-gray;
     }
+    
+    .header-business {
+        font-family: $h1-font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $text-gray;
+    }
+    
+    .work-cards {
+        width: 85px;
+        height: 108px;
+    }
+
+    .activity-type {
+        font-family: rubik500;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-gray;
+    }
+
+    .activity-text {
+        font-family: rubik300;
+        font-size: 14px;
+        line-height: 24px;
+        color: $text-gray;
+    }
+    
+
+    figcaption {
+        margin-left: 33px;
+    }
+
     .wrapper {
         z-index: 3;
         position: relative;
@@ -223,6 +307,8 @@ header {
         .section-top {
             height: 620px;
         }
+
+        
     }       
     @media screen and (min-width: 768px) {       
         &::before {
@@ -235,6 +321,7 @@ header {
             flex: 1;
             margin-top: 0;
             text-align: left;
+            align-items: flex-start;
         }    
         .wrapper {
             padding-left: 3rem;
@@ -258,9 +345,7 @@ header {
                 max-height: 70vh;
             }
         }
-        .text {
-            padding-left: 2rem;
-        }
+        
         .section-top {
             max-width: 90vw;
             height: calc(90vh - 8rem);
@@ -274,6 +359,7 @@ header {
 }
 article {    
     min-height: 100vh; // todo remove    
+    background: $bg-gray;
     &:nth-of-type(2n) {
         background-color: $button-agree-color;
     }
@@ -281,18 +367,85 @@ article {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
+    .article-about{
+        background: $bg-gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-about {
+        font-family: akrobat600;
+        text-align: center;
+        color: $header-green;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+    }
+    
+    .text-about-1 {
+        font-family: rubik300;
+        font-size: 18px;
+        line-height: 24px;
+        color: $text-white-default;
+    }
+    
+    .text-about-2 {
+        font-family: rubik300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-white-default;
+        margin-bottom: 10%;;
+
+    }
+
+    .header-short-about{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #40C8B2;
+    }
+
+    .column {
+        font-weight: rubik500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $text-white;
+    }
+
+    .know-button {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: rubik300;;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.05em;
+        width: 256px;
+        height: 48px;
+        border: 1px solid #FFFFFF;
+        border-radius: 24px;
+        margin-top: 10%;
+
+        a{
+            color: $text-white-default;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         &, &.inverted.segment {
             padding-top: 6rem;
             padding-bottom: 6rem;
 
             h2 {
-            font-family: $h1-font-family;
-            font-style: $h1-font-style;
-            font-weight: $h1-font-weight;
-            font-size: $h1-font-size;
-            line-height: $h1-line-height;
-            color: $h1-green-color;
+            
             }
         }
     } 
