@@ -8,6 +8,10 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    &-c {
+        align-content: center;
+        justify-content: center;
+    }
     &-nowrap {
         flex-wrap: nowrap;
     }
