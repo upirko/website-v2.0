@@ -409,7 +409,7 @@ article {
     }
 
     .column {
-        font-weight: rubik500;
+        font-family: rubik500;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
@@ -423,7 +423,7 @@ article {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        font-family: rubik300;;
+        font-family: rubik300;
         font-size: 18px;
         line-height: 21px;
         text-align: center;
@@ -557,10 +557,7 @@ footer {
     }
 }
 .technology {
-    //min-height: 100vh;
     position: relative;
-    //top: -220px;
-    //top: -105px;
     margin-top: -105px;
     padding-right: 5vw;
     &-main {
@@ -568,11 +565,8 @@ footer {
         font-size: 36px;
         background: url("../images/bg-splash-tech.svg") no-repeat center left;
         background-size: 80vw auto;
-        //background-size: 65vw auto;
-        //height: 892px;
         height: 100vh;
         width: 100vw;
-        //width: 991px;
         padding-left: 3vw;
         font-family: akrobat500;
         position: absolute;
@@ -624,8 +618,6 @@ footer {
         }
     }
     @media screen and (min-width: 1400px) {
-        &-block {
-        }
         &-list {
             margin: 0 3.5vw;
         }
