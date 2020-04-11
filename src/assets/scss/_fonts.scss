@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "rubik";
+    src: url("../assets/fonts/Rubiklight.woff2") format("woff2"),
+         url("../assets/fonts/Rubiklight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "rubik";
+    src: url("../assets/fonts/Rubikmedium.woff2") format("woff2"),
+         url("../assets/fonts/Rubikmedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat";
+  src: url("../assets/fonts/akrobatregular.woff2") format("woff2"),
+       url("../assets/fonts/akrobatregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "akrobat";
+    src: url("../assets/fonts/akrobat.woff2") format("woff2"),
+         url("../assets/fonts/akrobat.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "akrobat";
+    src: url("../assets/fonts/akrobatbold.woff2") format("woff2"),
+         url("../assets/fonts/akrobatbold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+$primary-font: 'rubik';
+$secondary-font: 'akrobat';
+$base-font-size: 16px;
+
+
+// $h1-font-family: akrobat500;
+
+
+
+/*
+h1 
+font-family: Akrobat;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 43px;
+
+
+1
+font-family: Akrobat;
+font-weight: 500, 600
+font-size: 24px, 36px, 
+line-height: 140%, 133%
+
+font-family: Rubik;
+font-weight: 300, 500,
+font-size: 21px, 18px, 16px, 14px, 12
+line-height: 14 19px, 21px, 24px
+letter-spacing: -0.05em;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 32px;
+
+
+
+
+
+
+
+*/
