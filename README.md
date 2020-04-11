@@ -12,5 +12,5 @@ On the agenda...
 
 Initial config:
 1. Run "npm i"
-2. Run "gulp sass"
-3. Open index.html in your browser to check that markup works correctly.
+2. Run "npm run serve"
+3. Open http://localhost:8080/ in your browser to check that markup works correctly.
