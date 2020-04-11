@@ -499,7 +499,3 @@
     </footer>
   </div>
 </template>
-
-<style lang="scss">
-@import '../assets/scss/styles';
-</style>

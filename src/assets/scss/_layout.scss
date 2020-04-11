@@ -211,7 +211,7 @@ header {
         z-index: 2; 
         bottom: 0;
         margin: auto;
-        background: url('../assets/images/bg-splash-s1.svg') right 0 no-repeat;
+        background: url('assets/images/bg-splash-s1.svg') right 0 no-repeat;
         background-size: 75vw auto;
     }
     .section-top {        
@@ -397,7 +397,7 @@ article {
 article#about {    
     
     min-height: 100vh; // todo remove    
-    background-image: url('../assets/images/bg-whoweare.svg') 0 bottom no-repeat;
+    background-image: url('assets/images/bg-whoweare.svg') 0 bottom no-repeat;
     background-size: cover;
     
     &:nth-of-type(2n) {
@@ -600,7 +600,7 @@ article#expect {
         padding: 15% 15% 0 0;
         width: 100%;
         height: 360px;
-        background-image: url('../assets/images/bg-expect-triangel.svg') center center no-repeat;
+        background-image: url('assets/images/bg-expect-triangel.svg') center center no-repeat;
         background-size: cover;
     }
     .header-values {
@@ -662,7 +662,7 @@ footer {
         &-wrapper {
             width: 1241px;
             height: 603px;
-            background: url('../assets/images/world-map.svg') no-repeat center top;
+            background: url('assets/images/world-map.svg') no-repeat center top;
             background-size: contain;
             margin: 0 auto;
             position: relative;
@@ -730,7 +730,7 @@ footer {
     padding-right: 5vw;
     &-main {
         color: $text-white-default;
-        background: url('../assets/images/bg-splash-tech.svg') no-repeat center left;
+        background: url('assets/images/bg-splash-tech.svg') no-repeat center left;
         background-size: 80vw auto;
         height: 100vh;
         width: 100vw;
@@ -799,7 +799,7 @@ footer {
         &-main {
             height: 577px;
             width: 280px;
-            background: url('../assets/images/bg-splash-tech-mobile.svg') no-repeat;
+            background: url('assets/images/bg-splash-tech-mobile.svg') no-repeat;
             top: 0;
             left: 0;
             align-items: flex-start;
@@ -845,7 +845,7 @@ footer {
             margin: auto;
             display: block;
             content: '';
-            background-image: url('../assets/images/bg-feedback-1.svg');
+            background-image: url('assets/images/bg-feedback-1.svg');
             background-repeat: no-repeat;
             background-position-x: center;
             background-size: auto 340px;
