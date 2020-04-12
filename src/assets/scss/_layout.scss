@@ -17,7 +17,7 @@ h2 {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase!important;
 }
 
 h3 {
@@ -55,6 +55,7 @@ h3 {
         display: none;
         .menu-item{
             color: $text-white;
+            text-transform: uppercase;
             margin: 0 0.9rem;
             font-size: 1rem;
         }
@@ -269,6 +270,7 @@ header {
     
     .header-business {
         font-family: $secondary-font;
+        text-transform: uppercase;
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
@@ -506,7 +508,7 @@ article#partner {
     h2 {
         font-size: 2.25rem;
         line-height: 1.2;
-        color: $text-gray;
+        color: $text-gray!important;
         margin-bottom: 75px;
     }
     .map {
@@ -752,45 +754,6 @@ article#values {
     } 
 }
 
-article#expect {    
-    
-    min-height: 100vh; // todo remove    
-    background-color: #FFFF;
-
-    &, &.inverted.segment {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-
-    .exp-column-left {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        padding: 15% 15% 0 0;
-        width: 100%;
-        height: 360px;
-        background-image: url('assets/images/bg-expect-triangel.svg') center center no-repeat;
-        background-size: cover;
-    }
-    .header-values {
-        color: $text-green;
-        margin-bottom: 10%;
- 
-    }
-
-    
-    
-
-    @media screen and (min-width: 768px) {
-        &, &.inverted.segment {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
-
-        }
-
-    } 
-}
-
 .jobs {
     position: relative;
     background: #fff;
@@ -913,6 +876,52 @@ article#expect {
             }
         }
     }
+}
+
+article#expect {    
+    
+    min-height: 100vh; // todo remove    
+    background-color: #FFFF;
+
+    &, &.inverted.segment {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .exp-column-left {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 15% 15% 0 0;
+        width: 100%;
+        height: 360px;
+        background: url('assets/images/bg-expect-triangel.svg') center center no-repeat;
+        background-size: contain;
+    }
+    .header-values {
+        color: $text-green;
+        margin-bottom: 10%;
+ 
+    }
+
+    
+    
+
+    @media screen and (min-width: 768px) {
+        &, &.inverted.segment {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+
+        }
+
+    } 
+}
+
+.trainee {
+    padding-top: 20%;
+    min-height: 50vh;
+    background: url('assets/images/bg-intern.svg') 0 top no-repeat;
+    background-size: cover;
 }
 
 #feedback {

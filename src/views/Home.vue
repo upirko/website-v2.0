@@ -12,12 +12,12 @@
                 <label><span class="ui label hidden">Light mode On/Off</span></label>
             </div>
             <div class="ui large secondary inverted text menu menu-list">
-                <a class="menu-item" href="#">О НАС</a>
-                <a class="menu-item" href="#">ПАРТНЕРЫ</a>
-                <a class="menu-item" href="#">ТЕХНОЛОГИИ</a>
-                <a class="menu-item" href="#">ЦЕННОСТИ</a>
-                <a class="menu-item" href="#">ВАКАНСИИ</a>
-                <a class="menu-item" href="#">КОНТАКТЫ</a>
+                <a class="menu-item" href="#">о нас</a>
+                <a class="menu-item" href="#">партнеры</a>
+                <a class="menu-item" href="#">технологии</a>
+                <a class="menu-item" href="#">ценности</a>
+                <a class="menu-item" href="#">вакансии</a>
+                <a class="menu-item" href="#">контакты</a>
             </div>
             <div class="ui tiny menu lang-list">
                 <div class="ui simple dropdown item">
@@ -53,7 +53,7 @@
                     <div class="four wide computer sixteen wide tablet column">
                         <div class="aligner">
                             <p class="text-create">Мы создаем программные продукты для инженеров, которые делают</p>
-                            <p class="header-business">БИЗНЕС СИЛЬНЕЕ</p>
+                            <p class="header-business">бизнес сильнее</p>
                         </div>
                     </div>
                     <div class="twelve wide computer sixteen wide tablet column">
@@ -129,7 +129,7 @@
                     <h3 class="header-short-about">Кратко о нас</h3>
                     <div class="ui stackable two column grid">
                         <div class="column">
-                            <p>Интернациональная командаbr</p>
+                            <p>Интернациональная команда</p>
                             <p>Говорим на русском, английском и немецком</p>
                             <p>Работаем по свободному графику</p>
                         </div>
@@ -372,7 +372,7 @@
             </div>
         </article>
 
-        <article id="trainee">
+        <article class="trainee">
             <h2 class="ui center aligned header">Стажировка</h2>
             <div class="ui center aligned text container">
             <p>Прежде всего, команда Натлекс — это люди, готовые помочь. 
@@ -380,6 +380,8 @@
                рады поддержать инициативу и поможем сделать первый шаг в освоении профессии.
                 <br> <br>
                 От тебя нужна лишь заявка!</p>
+            <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">Отправить заявку</a></div>            
+
             </div>
         </article>
 
