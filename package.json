@@ -1,30 +1,49 @@
 {
-  "name": "website-v2.0",
-  "version": "1.0.1",
-  "description": "Hello, everybody!\r In this project we will develop a new version of the site for our company. \r Layouts are already available and you can request them from Timofey.",
-  "main": "index.js",
+  "name": "natlex",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/natlex/website-v2.0.git"
-  },
-  "keywords": [],
-  "author": "natlex team",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/natlex/website-v2.0/issues"
-  },
-  "homepage": "https://github.com/natlex/website-v2.0#readme",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "npm": "^6.14.4",
-    "semantic-ui-sass": "^2.4.2"
+    "core-js": "^3.6.4",
+    "register-service-worker": "^1.7.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-vue": "^0.10.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-watch": "^5.0.1"
-  }
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-pwa": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
