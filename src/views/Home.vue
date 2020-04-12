@@ -151,7 +151,7 @@
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
                 <p class="text-partner"> 
                     <a id="ITC" href="https://www.itc-engineering.com/">ITC Engineering</a>
-                     — международная компания специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
+                     — международная компания, специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
                     Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
             </div>
         </article>
@@ -302,9 +302,9 @@
                               </a>
                         </div>
                         <div class="socials flex flex-x">
-                            <a href="" class="socials__item"><img src="images/icon-hh.svg" alt=""></a>
-                            <a href="" class="socials__item"><img src="images/icon-habr.svg" alt=""></a>
-                            <a href="" class="socials__item"><img src="images/icon-linkedin.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="ten wide stretched column">

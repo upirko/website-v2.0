@@ -307,7 +307,8 @@ header {
     }
 
     .work-cards {
-        width: 90px;
+        width: 75px!important;
+        height: 110px!important;
     }
 
     .wrapper {
@@ -397,7 +398,7 @@ article {
 article#about {    
     
     min-height: 100vh; // todo remove    
-    background-image: url('assets/images/bg-whoweare.svg') 0 bottom no-repeat;
+    background: url('assets/images/bg-whoweare.svg') 0 bottom no-repeat;
     background-size: cover;
     
     &, &.inverted.segment {
@@ -476,6 +477,8 @@ article#partner {
     }
 
     .text-partner {
+        font-family: $primary-font;
+        font-weight: 300;
         font-size: 18px;
         line-height: 24px;
         color: $text-black;
@@ -799,7 +802,7 @@ article#expect {
         right: 0;
         bottom: 0;
         top: 0;
-        background: url('../images/bg-pattern-vacancy.svg') no-repeat;
+        background: url('assets/images/bg-pattern-vacancy.svg') no-repeat;
         background-position: 50% 46%;
         background-size: cover;
         z-index: -1;
@@ -809,7 +812,8 @@ article#expect {
         line-height: 1.2;
         margin-bottom: 92px;
         color: $text-green;
-        font-family: akrobat500;
+        font-family: $secondary-font;
+        font-weight: 500;
     }
     &__button {
         margin-left: auto;
@@ -841,7 +845,8 @@ article#expect {
             .ui.vertical.tabular.menu {
                 border-right: none;
                 .item {
-                    font-family: 'rubik400', sans-serif;
+                    font-family: $primary-font, sans-serif;
+                    font-weight: 400;
                     font-size: 1.125rem;
                     line-height: 1.16;
                     color: $text-semiblack;
@@ -881,7 +886,8 @@ article#expect {
                 border: none;
                 padding: 45px 5px 42px 54px;
                 text-align: left;
-                font-family: akrobat300;
+                font-family: $secondary-font;
+                font-weight: 300;
                 &-content {
                     max-height: 580px;
                     overflow-y: scroll;
@@ -891,14 +897,16 @@ article#expect {
                 h4 {
                     font-size: 1.5rem;
                     line-height: 1.2;
-                    font-family: akrobat500;
+                    font-family: $secondary-font;
+                    font-weight: 500;
                     color: $h4-text-color;
                     margin-bottom: 0.58em
                 }
                 p {
                     font-size: 0.875rem;
                     line-height: 1.71;
-                    font-family: akrobat300;
+                    font-family: $secondary-font;
+                    font-weight: 300;
                     color: $text-semiblack;
                     &:last-child {margin-bottom: 0}
                 }
