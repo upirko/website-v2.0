@@ -135,7 +135,7 @@
                         </div>
                         <div class="column">
                             <p>Принимаем участие в IT-семинарах и конференциях</p>
-                            <p>Любим крутые  вечеринки</p>
+                            <p>Любим крутые вечеринки</p>
                             <p>Оплачиваем время вашей стажировки</p>
                         </div>
                     </div>
@@ -151,8 +151,8 @@
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
                 <p class="text-partner"> 
                     <a id="ITC" href="https://www.itc-engineering.com/">ITC Engineering</a>
-                     — международная компания специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
-                    Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
+                     — международная компания, специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
+                    Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
             </div>
         </article>
 
@@ -265,7 +265,7 @@
                     <div class="column">
                         <p class="value-text"><span class="h-value">Баланс между работой и личной жизнью <br></span>
                             <br>В&nbsp;компании гибкий график работы, поддерживаются
-                             хобби и&nbsp;занятия спортом, проводятся тренинги по&nbsp;
+                             хобби и&nbsp;занятия спортом, проводятся тренинги по&nbsp;
                              развитию софт-скиллов. У&nbsp;сотрудников есть возможность 
                              получить консультацию психолога.</p>
                     </div>
@@ -273,43 +273,71 @@
             </div>
         </article>
 
-        <article id="jobs">
+        <article id="jobs" style="jobs">
             <h2 class="ui center aligned header">Работай с нами</h2>
             <div class="ui content container">
-                <div class="ui stackable two columns grid">
-                    <div class="six wide column">
-                      <div class="ui vertical fluid tabular menu">
-                        <a class="active item">
-                          Фронтенд-разработчик
-                        </a>
-                        <a class="item">
-                          Бэкенд-разработчик
-                        </a>
-                        <a class="item">
-                          Менеджер проектов
-                        </a>
-                        <a class="item">
-                          DevOps-инженер
-                        </a>
-                        <a class="item">
-                          Тестировщик
-                        </a>
-                        <a class="item">
-                          Стажер
-                        </a>
-                        <a class="item">
-                            Мобильный разработчик
-                          </a>
-                      </div>
+                <div class="ui stackable two columns grid tab-wrapper">
+                    <div class="five wide column">
+                        <div class="ui vertical fluid tabular menu">
+                            <a class="active item">
+                                <span>Фронтенд-разработчик</span>
+                            </a>
+                            <a class="item">
+                                <span>Бэкенд-разработчик</span>
+                            </a>
+                            <a class="item">
+                                <span>Менеджер проектов</span>
+                            </a>
+                            <a class="item">
+                                <span>DevOps-инженер</span>
+                            </a>
+                            <a class="item">
+                                <span>Тестировщик</span>
+                            </a>
+                            <a class="item">
+                                <span>Стажер</span>
+                            </a>
+                            <a class="item">
+                                <span>Мобильный разработчик</span>
+                              </a>
+                        </div>
+                        <div class="socials flex flex-x">
+                            <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
+                        </div>
                     </div>
                     <div class="ten wide stretched column">
-                      <div class="ui segment">
-                          <p>Пожелания к кандидату <br>
-                            Понимание сервис-ориентированной архитектуры, 
-                            разработка многопоточных и распределенных приложений. 
-                            Высокий уровень самоорганизованности и личной ответственности. 
-                            Инициативность, умение работать в команде.
-                          </p>
+      <div class="ui segment tab-body">
+                          <div class="tab-body-content">
+                              <h4>Технологии</h4>
+                              <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                              <h4>Опыт работы</h4>
+                              <p>OOP, OOD, design patterns</p>
+                              <h4>Пожелания к кандидату</h4>
+                              <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                  Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                              <h4>Будет плюсом</h4>
+                              <p>
+                                  — Понимание и опыт применения Unit-тестирования;<br>
+                                  — Понимание основ сетевых протоколов;<br>
+                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                  — Знание английского на уровне чтения технической документации.
+                              </p>
+                              <p>
+                                  — Понимание и опыт применения Unit-тестирования;<br>
+                                  — Понимание основ сетевых протоколов;<br>
+                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                  — Знание английского на уровне чтения технической документации.
+                              </p>
+                              <p>
+                                  — Понимание и опыт применения Unit-тестирования;<br>
+                                  — Понимание основ сетевых протоколов;<br>
+                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                  — Знание английского на уровне чтения технической документации.
+                              </p>
+                          </div>
+                          <button class="jobs__button">Откликнуться</button>
                       </div>
                     </div>
                   </div>
