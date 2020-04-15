@@ -109,7 +109,7 @@
         </div>
     </header>
     <main>
-        <article id="about" class="article-about">
+        <article class="about">
             <h2 class="header-about">Кто мы</h2>
 
                 <section class="ui center aligned text container">
@@ -145,7 +145,7 @@
                 </div>
         </article>
 
-        <article id="partner" class="partner">
+        <article class="partner">
             <h2 class="header-partner">Наш партнер</h2>
             <div class="ui center aligned text container">
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
@@ -238,7 +238,7 @@
             </section>
         </article>
         
-        <article id="values">
+        <article class="values">
             <h2 class="header-values">Наши ценности</h2>
             <div class="ui stackable two column grid container">
                 <div id="row" class="row">
@@ -344,26 +344,28 @@
             </div>
         </article>
 
-        <article id="expect">            
+        <article class="expect">            
             <div class="ui content container">
                 <div class="ui stackable two column grid">
                     <div class="exp-column-left">
-                        <img src="../assets/images/logo-natlex-triangle.svg" alt="Мы ожидаем">
-                        <h2>мы ожидаем <br> <span>от сотрудника</span></h2>
+                        <div class="exp-triangle-block">
+                            <img class="logo-triangle" src="../assets/images/logo-natlex-triangle.svg" alt="Мы ожидаем">
+                            <p  >  <span class="header-triangle"> мы ожидаем</span><br>от сотрудника</p>
+                        </div>
                     </div>
                     <div class="column">
                         <section>
-                            <h4>Ответственность</h4>
+                            <h4 class="h-expect">Ответственность</h4>
                             <p>В компании нет строгой иерархии, но есть зоны ответственности.
                                Компания доверяет сотруднику и его\ее способности правильно распределять время и усилия. </p>
                         </section>
                         <section>
-                            <h4>Открытость</h4>
+                            <h4 class="h-expect">Открытость</h4>
                             <p>Сотрудники компании сомневаются, задают вопросы, делятся новыми идеями,
                                просят помощи и говорят о своих желаниях.</p>
                         </section>
                         <section>
-                            <h4>Желание роста</h4>
+                            <h4 class="h-expect">Желание роста</h4>
                             <p>Сотрудники мотивированы, профессионально растут и развиваются вместе с компанией. 
                                Сотрудники заинтересованы в результате и качестве выполняемой работы.</p>
                         </section>
