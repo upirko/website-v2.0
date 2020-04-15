@@ -397,31 +397,24 @@ article {
    }
 }
 
-article#about {    
+.about {    
     
     min-height: 100vh; // todo remove    
     background: url('assets/images/bg-whoweare.svg') 0 bottom no-repeat;
     background-size: cover;
+     
     
     &, &.inverted.segment {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
 
-    .article-about{
-        background: $bg-gray;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     .header-about { 
         color: $header-green;  
     }
     
     .text-about-1 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 1.3rem;
         color: $text-white-default;
     }
     
@@ -462,9 +455,9 @@ article#about {
     } 
 }
 
-article#partner {    
+.partner {    
     
-    min-height: 100vh; // todo remove    
+    min-height: 60vh; // todo remove    
     background-color: #FFFF;
     
     &, &.inverted.segment {
@@ -478,13 +471,9 @@ article#partner {
         
     }
 
-    .text-partner {
-        font-family: $primary-font;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 24px;
-        color: $text-black;
-    }
+    
+
+ 
     a#ITC {
         text-decoration: none;
         color: $text-green;
@@ -682,7 +671,7 @@ article#partner {
     }
 }
 
-article#values {    
+.values {    
     
     min-height: 100vh; // todo remove    
     background-color: #FFFF;
@@ -948,7 +937,7 @@ article.jobs {
     }
 }
 
-article#expect {    
+.expect {    
     
     min-height: 100vh; // todo remove    
     background-color: #FFFF;
@@ -959,20 +948,56 @@ article#expect {
     }
 
     .exp-column-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .exp-triangle-block {
+        width: 300px;
+        height: 300px;
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        padding: 15% 15% 0 0;
-        width: 100%;
-        height: 360px;
+        text-align: right;
+        padding: 70px 70px 0 0;
         background: url('assets/images/bg-expect-triangel.svg') center center no-repeat;
         background-size: contain;
+        }
+
+    .logo-triangle {
+        width: 75px;
+        margin-bottom: 7%;
     }
-    .header-values {
+
+    .header-triangle {
+        font-family: $secondary-font;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
         color: $text-green;
-        margin-bottom: 10%;
- 
     }
+
+    .h-expect {
+        font-family: $secondary-font;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 29px;
+        color: $text-green;
+        
+    }
+
+    .expect-text {
+        font-size: 1rem;
+        line-height: 2em;
+        padding: 5px;
+    }
+
+
+    
 
     
     
