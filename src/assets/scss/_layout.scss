@@ -754,10 +754,11 @@ article#values {
     } 
 }
 
-.jobs {
+article.jobs {
     position: relative;
     background: #fff;
     z-index: 1;
+    padding-top: 6rem;
     &:after {
         content: '';
         position: absolute;
@@ -766,11 +767,17 @@ article#values {
         bottom: 0;
         top: 0;
         background: url('assets/images/bg-pattern-vacancy.svg') no-repeat;
-        background-position: 50% 46%;
+        background-position: 50% 36%;
         background-size: cover;
         z-index: -1;
     }
-    h2 {
+    .vacancy-button {
+        &-wrapper {
+            text-align: right;
+            padding-right: 32px;
+        }
+    }
+    h2.header.ui {
         font-size: 2.25rem;
         line-height: 1.2;
         margin-bottom: 92px;
@@ -778,15 +785,12 @@ article#values {
         font-family: $secondary-font;
         font-weight: 500;
     }
-    &__button {
-        margin-left: auto;
-        display: block;
-        text-align: right;
-        margin-right: 32px;
-    }
     .socials {
         padding-left: 38px;
         margin-top: 60px;
+        &.mobile {
+            display: none;
+        }
         &__item {
             margin-right: 26px;
             display: inline-flex;
@@ -807,6 +811,7 @@ article#values {
             }
             .ui.vertical.tabular.menu {
                 border-right: none;
+                margin-top: 0;
                 .item {
                     font-family: $primary-font, sans-serif;
                     font-weight: 400;
@@ -874,6 +879,71 @@ article#values {
                     &:last-child {margin-bottom: 0}
                 }
             }
+        }
+    }
+    .vacancy-select-mobile {
+        display: none;
+    }
+    @media screen and (max-width: 768px){
+        padding-top: 4rem;
+        h2.header.ui {
+            font-weight: 400!important;
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .vacancy-select-mobile {
+            display: block;
+            text-align: center;
+            select {
+                border: 1px solid #E0E1E2;
+                height: 36px;
+                background: #fff;
+                width: 100%;
+                line-height: 1.56;
+                font-size: 0.875rem;
+                border-radius: 8px;
+            }
+        }
+        .tabular.menu {
+            display: none;
+        }
+        .socials {
+            display: none;
+            padding: 0 1rem;
+            &.mobile {
+                display: flex;
+                margin-top: 34px;
+            }
+        }
+        .tab-wrapper .tab-body {
+            box-shadow: none;
+            padding: 0 15px;
+            background: none;
+            &-content {
+                max-height: none;
+                margin-bottom: 20px;
+                padding: 0;
+                overflow: visible;
+            }
+        }
+        .vacancy-button-wrapper {
+            text-align: center;
+            padding: 0;
+        }
+        &:after {
+            background-size: contain;
+            background-position: center bottom;
+            bottom: -220px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 30%;
+            left: 0;
+            right: 0;
+            background: #f9fafb;
+            z-index: -1;
         }
     }
 }

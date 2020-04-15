@@ -68,6 +68,13 @@
           background-color: rgba($fog-white, 0.8);
       }
   }
+  &.light-green-gd {
+    background: linear-gradient(180deg, #4EC19D 0%, #1A9C9A 100%);
+    color: $text-white;
+  }
+  &.lw {
+    font-weight: 300;
+  }
   &.outlined {
       color: $header-black;
       border: 1px solid $header-black;
@@ -76,4 +83,9 @@
       border-color: $text-white;
       color: $text-white-default;
   }
+}
+.vacancy-button {
+  text-align: center;
+  width: 192px;
+  margin-left: auto;
 }

@@ -273,11 +273,22 @@
             </div>
         </article>
 
-        <article id="jobs" style="jobs">
+        <article id="jobs" class="jobs">
             <h2 class="ui center aligned header">Работай с нами</h2>
             <div class="ui content container">
                 <div class="ui stackable two columns grid tab-wrapper">
                     <div class="five wide column">
+                        <div class="vacancy-select-mobile">
+                            <select name="" id="">
+                                <option value="">Фронтенд-разработчик</option>
+                                <option value="">Бэкенд-разработчик</option>
+                                <option value="">Менеджер проектов</option>
+                                <option value="">DevOps-инженер</option>
+                                <option value="">Тестировщик</option>
+                                <option value="">Стажер</option>
+                                <option value="">Мобильный разработчик</option>
+                            </select>
+                        </div>
                         <div class="ui vertical fluid tabular menu">
                             <a class="active item">
                                 <span>Фронтенд-разработчик</span>
@@ -299,7 +310,7 @@
                             </a>
                             <a class="item">
                                 <span>Мобильный разработчик</span>
-                              </a>
+                            </a>
                         </div>
                         <div class="socials flex flex-x">
                             <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
@@ -308,39 +319,46 @@
                         </div>
                     </div>
                     <div class="ten wide stretched column">
-      <div class="ui segment tab-body">
-                          <div class="tab-body-content">
-                              <h4>Технологии</h4>
-                              <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
-                              <h4>Опыт работы</h4>
-                              <p>OOP, OOD, design patterns</p>
-                              <h4>Пожелания к кандидату</h4>
-                              <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                  Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
-                              <h4>Будет плюсом</h4>
-                              <p>
-                                  — Понимание и опыт применения Unit-тестирования;<br>
-                                  — Понимание основ сетевых протоколов;<br>
-                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                  — Знание английского на уровне чтения технической документации.
-                              </p>
-                              <p>
-                                  — Понимание и опыт применения Unit-тестирования;<br>
-                                  — Понимание основ сетевых протоколов;<br>
-                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                  — Знание английского на уровне чтения технической документации.
-                              </p>
-                              <p>
-                                  — Понимание и опыт применения Unit-тестирования;<br>
-                                  — Понимание основ сетевых протоколов;<br>
-                                  — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                  — Знание английского на уровне чтения технической документации.
-                              </p>
-                          </div>
-                          <button class="jobs__button">Откликнуться</button>
-                      </div>
+                        <div class="ui segment tab-body">
+                            <div class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                            </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">Откликнуться</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="socials flex flex-x mobile">
+                        <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                        <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                        <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </article>
 
