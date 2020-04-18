@@ -21,13 +21,17 @@
             </div>
             <div class="ui tiny menu lang-list">
                 <div class="ui simple dropdown item">
-                    Rus
+                    {{ currentLang.label }}
                     <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <div class="item">Rus</div>
-                        <div class="item">Eng</div>
-                        <div class="item">Ger</div>
-                    </div>
+                    <ul class="menu">
+                        <li class="item" 
+                            v-for="(lang, index) in langs" :key="index" 
+                            :class="{active: currentLang.locale == lang.locale}"
+                            @click="changeLang(lang.locale)"
+                        >
+                            {{ lang.label }}
+                        </li>
+                    </ul>
                 </div>
             </div>
             <button type="button" class="menu-toggler">
@@ -43,7 +47,7 @@
                 <img src="../assets/images/bg-people-s1.svg" alt="Natlex people">
             </div>
             <div class="text">
-                <h1>Создавай. Развивайся.<br><span class="highlight">Открывай новое.</span></h1>
+                <h1>{{$t('slogan')}}<br><span class="highlight">Открывай новое.</span></h1>
                 <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">Узнай больше</a></div>            
             </div>
         </div>
@@ -326,7 +330,7 @@
                                 <h4>Опыт работы</h4>
                                 <p>OOP, OOD, design patterns</p>
                                 <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
                                     Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
                                 <h4>Будет плюсом</h4>
                                 <p>
@@ -549,3 +553,27 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            langs: [
+                {locale: 'ru', label: 'Rus'},
+                {locale: 'en', label: 'Eng'},
+                {locale: 'de', label: 'Ger'}
+            ]
+        }
+    },
+    computed: {
+        currentLang() {
+            return this.langs.find(l => l.locale == this.$i18n.locale) || this.langs[0];
+        }
+    },
+    methods: {
+        changeLang(lang) {
+            this.$i18n.locale = lang;
+        }
+    }
+}
+</script>
