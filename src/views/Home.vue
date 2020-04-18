@@ -12,12 +12,12 @@
                 <label><span class="ui label hidden">Light mode On/Off</span></label>
             </div>
             <div class="ui large secondary inverted text menu menu-list">
-                <a class="menu-item" href="#">О НАС</a>
-                <a class="menu-item" href="#">ПАРТНЕРЫ</a>
-                <a class="menu-item" href="#">ТЕХНОЛОГИИ</a>
-                <a class="menu-item" href="#">ЦЕННОСТИ</a>
-                <a class="menu-item" href="#">ВАКАНСИИ</a>
-                <a class="menu-item" href="#">КОНТАКТЫ</a>
+                <a class="menu-item" href="#">о нас</a>
+                <a class="menu-item" href="#">партнеры</a>
+                <a class="menu-item" href="#">технологии</a>
+                <a class="menu-item" href="#">ценности</a>
+                <a class="menu-item" href="#">вакансии</a>
+                <a class="menu-item" href="#">контакты</a>
             </div>
             <div class="ui tiny menu lang-list">
                 <div class="ui simple dropdown item">
@@ -53,7 +53,7 @@
                     <div class="four wide computer sixteen wide tablet column">
                         <div class="aligner">
                             <p class="text-create">Мы создаем программные продукты для инженеров, которые делают</p>
-                            <p class="header-business">БИЗНЕС СИЛЬНЕЕ</p>
+                            <p class="header-business">бизнес сильнее</p>
                         </div>
                     </div>
                     <div class="twelve wide computer sixteen wide tablet column">
@@ -109,7 +109,7 @@
         </div>
     </header>
     <main>
-        <article id="about" class="article-about">
+        <article class="about">
             <h2 class="header-about">Кто мы</h2>
 
                 <section class="ui center aligned text container">
@@ -129,13 +129,13 @@
                     <h3 class="header-short-about">Кратко о нас</h3>
                     <div class="ui stackable two column grid">
                         <div class="column">
-                            <p>Интернациональная командаbr</p>
+                            <p>Интернациональная команда</p>
                             <p>Говорим на русском, английском и немецком</p>
                             <p>Работаем по свободному графику</p>
                         </div>
                         <div class="column">
                             <p>Принимаем участие в IT-семинарах и конференциях</p>
-                            <p>Любим крутые  вечеринки</p>
+                            <p>Любим крутые вечеринки</p>
                             <p>Оплачиваем время вашей стажировки</p>
                         </div>
                     </div>
@@ -145,14 +145,14 @@
                 </div>
         </article>
 
-        <article id="partner" class="partner">
+        <article class="partner">
             <h2 class="header-partner">Наш партнер</h2>
             <div class="ui center aligned text container">
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
                 <p class="text-partner"> 
                     <a id="ITC" href="https://www.itc-engineering.com/">ITC Engineering</a>
-                     — международная компания специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
-                    Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
+                     — международная компания, специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
+                    Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
             </div>
         </article>
 
@@ -238,7 +238,7 @@
             </section>
         </article>
         
-        <article id="values">
+        <article class="values">
             <h2 class="header-values">Наши ценности</h2>
             <div class="ui stackable two column grid container">
                 <div id="row" class="row">
@@ -265,7 +265,7 @@
                     <div class="column">
                         <p class="value-text"><span class="h-value">Баланс между работой и личной жизнью <br></span>
                             <br>В&nbsp;компании гибкий график работы, поддерживаются
-                             хобби и&nbsp;занятия спортом, проводятся тренинги по&nbsp;
+                             хобби и&nbsp;занятия спортом, проводятся тренинги по&nbsp;
                              развитию софт-скиллов. У&nbsp;сотрудников есть возможность 
                              получить консультацию психолога.</p>
                     </div>
@@ -273,69 +273,117 @@
             </div>
         </article>
 
-        <article id="jobs">
+        <article id="jobs" class="jobs">
             <h2 class="ui center aligned header">Работай с нами</h2>
             <div class="ui content container">
-                <div class="ui stackable two columns grid">
-                    <div class="six wide column">
-                      <div class="ui vertical fluid tabular menu">
-                        <a class="active item">
-                          Фронтенд-разработчик
-                        </a>
-                        <a class="item">
-                          Бэкенд-разработчик
-                        </a>
-                        <a class="item">
-                          Менеджер проектов
-                        </a>
-                        <a class="item">
-                          DevOps-инженер
-                        </a>
-                        <a class="item">
-                          Тестировщик
-                        </a>
-                        <a class="item">
-                          Стажер
-                        </a>
-                        <a class="item">
-                            Мобильный разработчик
-                          </a>
-                      </div>
+                <div class="ui stackable two columns grid tab-wrapper">
+                    <div class="five wide column">
+                        <div class="vacancy-select-mobile">
+                            <select name="" id="">
+                                <option value="">Фронтенд-разработчик</option>
+                                <option value="">Бэкенд-разработчик</option>
+                                <option value="">Менеджер проектов</option>
+                                <option value="">DevOps-инженер</option>
+                                <option value="">Тестировщик</option>
+                                <option value="">Стажер</option>
+                                <option value="">Мобильный разработчик</option>
+                            </select>
+                        </div>
+                        <div class="ui vertical fluid tabular menu">
+                            <a class="active item">
+                                <span>Фронтенд-разработчик</span>
+                            </a>
+                            <a class="item">
+                                <span>Бэкенд-разработчик</span>
+                            </a>
+                            <a class="item">
+                                <span>Менеджер проектов</span>
+                            </a>
+                            <a class="item">
+                                <span>DevOps-инженер</span>
+                            </a>
+                            <a class="item">
+                                <span>Тестировщик</span>
+                            </a>
+                            <a class="item">
+                                <span>Стажер</span>
+                            </a>
+                            <a class="item">
+                                <span>Мобильный разработчик</span>
+                            </a>
+                        </div>
+                        <div class="socials flex flex-x">
+                            <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                            <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
+                        </div>
                     </div>
                     <div class="ten wide stretched column">
-                      <div class="ui segment">
-                          <p>Пожелания к кандидату <br>
-                            Понимание сервис-ориентированной архитектуры, 
-                            разработка многопоточных и распределенных приложений. 
-                            Высокий уровень самоорганизованности и личной ответственности. 
-                            Инициативность, умение работать в команде.
-                          </p>
-                      </div>
+                        <div class="ui segment tab-body">
+                            <div class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                            </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">Откликнуться</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="socials flex flex-x mobile">
+                        <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                        <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                        <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </article>
 
-        <article id="expect">            
+        <article class="expect">            
             <div class="ui content container">
                 <div class="ui stackable two column grid">
                     <div class="exp-column-left">
-                        <img src="../assets/images/logo-natlex-triangle.svg" alt="Мы ожидаем">
-                        <h2>мы ожидаем <br> <span>от сотрудника</span></h2>
+                        <div class="exp-triangle-block">
+                            <img class="logo-triangle" src="../assets/images/logo-natlex-triangle.svg" alt="Мы ожидаем">
+                            <p  >  <span class="header-triangle"> мы ожидаем</span><br>от сотрудника</p>
+                        </div>
                     </div>
                     <div class="column">
                         <section>
-                            <h4>Ответственность</h4>
+                            <h4 class="h-expect">Ответственность</h4>
                             <p>В компании нет строгой иерархии, но есть зоны ответственности.
                                Компания доверяет сотруднику и его\ее способности правильно распределять время и усилия. </p>
                         </section>
                         <section>
-                            <h4>Открытость</h4>
+                            <h4 class="h-expect">Открытость</h4>
                             <p>Сотрудники компании сомневаются, задают вопросы, делятся новыми идеями,
                                просят помощи и говорят о своих желаниях.</p>
                         </section>
                         <section>
-                            <h4>Желание роста</h4>
+                            <h4 class="h-expect">Желание роста</h4>
                             <p>Сотрудники мотивированы, профессионально растут и развиваются вместе с компанией. 
                                Сотрудники заинтересованы в результате и качестве выполняемой работы.</p>
                         </section>
@@ -344,7 +392,7 @@
             </div>
         </article>
 
-        <article id="trainee">
+        <article class="trainee">
             <h2 class="ui center aligned header">Стажировка</h2>
             <div class="ui center aligned text container">
             <p>Прежде всего, команда Натлекс — это люди, готовые помочь. 
@@ -352,6 +400,8 @@
                рады поддержать инициативу и поможем сделать первый шаг в освоении профессии.
                 <br> <br>
                 От тебя нужна лишь заявка!</p>
+            <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">Отправить заявку</a></div>            
+
             </div>
         </article>
 
