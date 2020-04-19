@@ -248,78 +248,71 @@
         </article>
         
         <article id="values" class="values">
-            <h2 class="header-values">Наши ценности</h2>
+            <h2 class="header-values">{{$t('values-header')}}</h2>
             <div class="ui stackable two column grid container">
                 <div id="row" class="row">
                     <div class="column"><img src="../assets/images/icon-values-1.svg" alt=""></div>
                     <div class="column">
-                            <p class="value-text"><span class="h-value">Сотрудники <br></span>
-                                <br> Компания обеспечивает комфортное место для работы, 
-                                проводит performance review и&nbsp;оценку 360, 
-                                компенсирует затраты на&nbsp;обучение, конференции и&nbsp;курсы, 
-                                строит прозрачные отношения, поддерживает идеи сотрудников финансами и&nbsp;ресурсами. </p>
+                            <p class="value-text"><span class="h-value">{{$t('value1-h')}}<br></span>
+                                <br> {{$t('value1-text')}}</p>
                     </div>
                 </div>
                 <div id="reverse-row" class="row">
                     <div class="column"><img src="../assets/images/icon-values-2.svg" alt=""></div>
                     <div class="column">
-                        <p class="value-text-reverse"><span class="h-value">Прозрачность <br></span>
-                            <br>В&nbsp;компании ценится прямая коммуникация,сформирована система 
-                            оценки сотрудников и&nbsp;прописаны зоны ответственности. 
-                            Каждый квартал наши сотрудники получают финансовый отчет организации. </p> 
+                        <p class="value-text-reverse"><span class="h-value">{{$t('value2-h')}}<br></span>
+                            <br>{{$t('value2-text')}} </p> 
                     </div>                  
                 </div>
                 <div id="row"  class="row">
                     <div class="column"><img src="../assets/images/icon-values-3.svg" alt=""></div>
                     <div class="column">
-                        <p class="value-text"><span class="h-value">Баланс между работой и личной жизнью <br></span>
-                            <br>В&nbsp;компании гибкий график работы, поддерживаются
-                             хобби и&nbsp;занятия спортом, проводятся тренинги по&nbsp;
-                             развитию софт-скиллов. У&nbsp;сотрудников есть возможность 
-                             получить консультацию психолога.</p>
+                        <p class="value-text"><span class="h-value">{{$t('value3-h')}} <br></span>
+                            <br>{{$t('value3-text')}}</p>
                     </div>
                 </div>
             </div>
         </article>
 
         <article id="jobs" class="jobs">
-            <h2 class="ui center aligned header">Работай с нами</h2>
+            <h2 class="ui center aligned header">{{$t('join-header')}}</h2>
             <div class="ui content container">
                 <div class="ui stackable two columns grid tab-wrapper">
                     <div class="five wide column">
                         <div class="vacancy-select-mobile">
                             <select name="" id="">
-                                <option value="">Фронтенд-разработчик</option>
-                                <option value="">Бэкенд-разработчик</option>
-                                <option value="">Менеджер проектов</option>
-                                <option value="">DevOps-инженер</option>
-                                <option value="">Тестировщик</option>
-                                <option value="">Стажер</option>
-                                <option value="">Мобильный разработчик</option>
+                                <option value="">{{$t('vacancy-fe')}}</option>
+                                <option value="">{{$t('vacancy-be')}}</option>
+                                <option value="">{{$t('vacancy-pm')}}</option>
+                                <option value="">{{$t('vacancy-devops')}}</option>
+                                <option value="">{{$t('vacancy-qa')}}</option>
+                                <option value="">{{$t('vacancy-mobile')}}</option>
+                                <option value="">{{$t('vacancy-intern')}}</option>
                             </select>
                         </div>
                         <div class="ui vertical fluid tabular menu">
                             <a class="active item">
-                                <span>Фронтенд-разработчик</span>
+                                <span>{{$t('vacancy-fe')}}</span>
                             </a>
                             <a class="item">
-                                <span>Бэкенд-разработчик</span>
+                                <span>{{$t('vacancy-be')}}</span>
                             </a>
                             <a class="item">
-                                <span>Менеджер проектов</span>
+                                <span>{{$t('vacancy-pm')}}</span>
                             </a>
                             <a class="item">
-                                <span>DevOps-инженер</span>
+                                <span>{{$t('vacancy-devops')}}</span>
                             </a>
                             <a class="item">
-                                <span>Тестировщик</span>
+                                <span>{{$t('vacancy-qa')}}</span>
                             </a>
                             <a class="item">
-                                <span>Стажер</span>
+                                <span>{{$t('vacancy-mobile')}}</span>
                             </a>
                             <a class="item">
-                                <span>Мобильный разработчик</span>
+                                <span>{{$t('vacancy-intern')}}</span>
                             </a>
+                            
                         </div>
                         <div class="socials flex flex-x">
                             <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
@@ -358,7 +351,7 @@
                                 </p>
                             </div>
                             <div class="vacancy-button-wrapper">
-                                <button class="vacancy-button ntx-button rounded light-green-gd lw">Откликнуться</button>
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
                             </div>
                         </div>
                     </div>
@@ -377,39 +370,36 @@
                     <div class="exp-column-left">
                         <div class="exp-triangle-block">
                             <img class="logo-triangle" src="../assets/images/logo-natlex-triangle.svg" alt="Мы ожидаем">
-                            <p  >  <span class="header-triangle"> мы ожидаем</span><br>от сотрудника</p>
+                            <p  >  <span class="header-triangle">{{$t('expect-header1')}}</span><br>{{$t('expect-header2')}}</p>
                         </div>
                     </div>
                     <div class="column">
                         <section>
-                            <h4 class="h-expect">Ответственность</h4>
-                            <p>В компании нет строгой иерархии, но есть зоны ответственности.
-                               Компания доверяет сотруднику и его\ее способности правильно распределять время и усилия. </p>
+                            <h4 class="h-expect">{{$t('expect1-h')}}</h4>
+                            <p>{{$t('expect1-text')}} </p>
                         </section>
                         <section>
-                            <h4 class="h-expect">Открытость</h4>
-                            <p>Сотрудники компании сомневаются, задают вопросы, делятся новыми идеями,
-                               просят помощи и говорят о своих желаниях.</p>
+                             <h4 class="h-expect">{{$t('expect2-h')}}</h4>
+                            <p>{{$t('expect2-text')}} </p>
                         </section>
                         <section>
-                            <h4 class="h-expect">Желание роста</h4>
-                            <p>Сотрудники мотивированы, профессионально растут и развиваются вместе с компанией. 
-                               Сотрудники заинтересованы в результате и качестве выполняемой работы.</p>
+                             <h4 class="h-expect">{{$t('expect3-h')}}</h4>
+                            <p>{{$t('expect3-text')}} </p>
                         </section>
                     </div>
                 </div>
+                <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('expect-button')}}</button>
+                    </div>
             </div>
         </article>
 
         <article class="trainee">
-            <h2 class="ui center aligned header">Стажировка</h2>
+            <h2 class="ui center aligned header">{{$t('intern-header')}}</h2>
             <div class="ui center aligned text container">
-            <p>Прежде всего, команда Натлекс — это люди, готовые помочь. 
-               Если ты студент, или просто хочешь попробовать себя в деле — мы будем 
-               рады поддержать инициативу и поможем сделать первый шаг в освоении профессии.
-                <br> <br>
-                От тебя нужна лишь заявка!</p>
-            <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">Отправить заявку</a></div>            
+            <p> {{$t('intern-text1')}} <br> <br>
+                {{$t('intern-text2')}}</p>
+            <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">{{$t('intern-button')}}</a></div>            
 
             </div>
         </article>
