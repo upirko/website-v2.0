@@ -688,9 +688,9 @@ article {
     }
 
     .column {
-        display: flex;
+        display: flex!important;
         justify-content: center;
-        align-items: center;
+        align-items: center!important;
         text-align: center;
         
     }
@@ -843,7 +843,7 @@ article.jobs {
                 border: none;
                 padding: 45px 5px 42px 54px;
                 text-align: left;
-                font-family: $secondary-font;
+                font-family: $primary-font;
                 font-weight: 300;
                 &-content {
                     max-height: 580px;
@@ -862,7 +862,7 @@ article.jobs {
                 p {
                     font-size: 0.875rem;
                     line-height: 1.71;
-                    font-family: $secondary-font;
+                    font-family: $primary-font;
                     font-weight: 300;
                     color: $text-semiblack;
                     &:last-child {margin-bottom: 0}

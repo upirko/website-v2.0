@@ -286,7 +286,8 @@
                                 <option value="">{{$t('vacancy-pm')}}</option>
                                 <option value="">{{$t('vacancy-devops')}}</option>
                                 <option value="">{{$t('vacancy-qa')}}</option>
-                                <option value="">{{$t('vacancy-mobile')}}</option>
+                                <option value="">{{$t('vacancy-mobile-ios')}}</option>
+                                <option value="">{{$t('vacancy-mobile-android')}}</option>
                                 <option value="">{{$t('vacancy-intern')}}</option>
                             </select>
                         </div>
@@ -307,7 +308,10 @@
                                 <span>{{$t('vacancy-qa')}}</span>
                             </a>
                             <a class="item">
-                                <span>{{$t('vacancy-mobile')}}</span>
+                                <span>{{$t('vacancy-mobile-ios')}}</span>
+                            </a>
+                            <a class="item">
+                                <span>{{$t('vacancy-mobile-android')}}</span>
                             </a>
                             <a class="item">
                                 <span>{{$t('vacancy-intern')}}</span>
@@ -325,11 +329,14 @@
                             <div class="tab-body-content">
                                 <h4>Технологии</h4>
                                 <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+
                                 <h4>Опыт работы</h4>
                                 <p>OOP, OOD, design patterns</p>
+
                                 <h4>Пожелания к кандидату</h4>
                                 <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
                                     Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                    
                                 <h4>Будет плюсом</h4>
                                 <p>
                                     — Понимание и опыт применения Unit-тестирования;<br>
@@ -337,18 +344,7 @@
                                     — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
                                     — Знание английского на уровне чтения технической документации.
                                 </p>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
+                                
                             </div>
                             <div class="vacancy-button-wrapper">
                                 <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
@@ -407,8 +403,8 @@
         <article id="feedback" class="feedback">
             <div class="ui content container">
                 <div class="ui secondary menu" role="menu">
-                    <a href="#" class="item">Написать сообщение</a>
-                    <a href="#" class="item active">Отправить резюме</a>                    
+                    <a href="#" class="item">{{$t('button-write-message')}}</a>
+                    <a href="#" class="item active">{{$t('button-send-CV')}}</a>                    
                 </div>
                
     
@@ -416,7 +412,7 @@
                     <div class="column">
                         <form class="ui form">
                             <div class="field required">
-                                <label>Ваше имя</label>
+                                <label>{{$t('label-name')}}</label>
                                 <input type="text" name="first-name" required placeholder="Имя">
                             </div>
                             <div class="field required">

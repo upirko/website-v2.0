@@ -71,9 +71,19 @@
   "vacancy-pm": "Менеджер проектов",
   "vacancy-devops": "DevOps-инженер",
   "vacancy-qa": "Тестировщик",
-  "vacancy-mobile": "Мобильный разработчик",
+  "vacancy-mobile-ios": "IOS разработчик",
+  "vacancy-mobile-android": "Android разработчик",
   "vacancy-intern": "Стажер",
   "button-apply": "Откликнуться",
+
+  "fe-descr-h-1": "",
+  "fe-descr-text-1": "",
+  "fe-descr-h-2": "",
+  "fe-descr-text-2": "",
+  "fe-descr-h-3": "",
+  "fe-descr-descr-3": "",
+  "fe-descr-h-4": "",
+  "fe-descr-descr-4": "",
 
   "expect-header1": "мы ожидаем",
   "expect-header2": "от сотрудника",
@@ -89,6 +99,20 @@
   "intern-header": "Стажировка",
   "intern-text1": "Прежде всего, команда Натлекс — это люди, готовые помочь. Если ты студент, или просто хочешь попробовать себя в деле — мы будем рады поддержать инициативу и поможем сделать первый шаг в освоении профессии.",
   "intern-text2": "От тебя нужна лишь заявка!",
-  "intern-button": "Отправить заявку"
+  "intern-button": "Отправить заявку",
+
+  "button-write-message": "Написать сообщение",
+  "button-send-CV": "Отправить резюме",
+  "label-name":"Ваше имя",
+  "placeholder-name":"Имя",
+  "label-mail":"Электронная почта",
+  "placeholder-male":"email@box.com",
+  "label-message":"Сообщение",
+  "placeholder-message":"Добрый день, ...",
+  "label-agree":"Я согласен с условиями",
+  "label-agree-dsclmr":"Нажимая на эту кнопку, я даю согласие на обработку",
+  "label-pers-data":"персональных данных",
+  "button-send": "Отправить"
+
 
 }

@@ -70,9 +70,10 @@
   "vacancy-fe": "Frontend  developer",
   "vacancy-be": "Backend  developer",
   "vacancy-pm": "Project manager",
-  "vacancy-devops": "DevOps Engineer",
+  "vacancy-devops": "DevOps engineer",
   "vacancy-qa": "QA engineer",
-  "vacancy-mobile": "Mobile developer",
+  "vacancy-mobile-ios": "IOS developer",
+  "vacancy-mobile-android": "Android developer",
   "vacancy-intern": "Intern",
   "button-apply": "Apply",
 
@@ -87,7 +88,7 @@
   "expect-button": "Send us a CV",
 
 
-  "intern-header": "INTERNSHIP",
+  "intern-header": "internship",
   "intern-text1": "First of all, Natlex is a team of people who care. If you're a student or would like to try IT techs, we are ready to support you, so you can make your first step in web development.",
   "intern-text2": "All you need is to apply!",
   "intern-button": "Apply"
