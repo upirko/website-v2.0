@@ -12,12 +12,12 @@
                 <label><span class="ui label hidden">Light mode On/Off</span></label>
             </div>
             <div class="ui large secondary inverted text menu menu-list">
-                <a class="menu-item" href="#">{{$t('menu-about')}}</a>
-                <a class="menu-item" href="#">{{$t('menu-partners')}}</a>
-                <a class="menu-item" href="#">{{$t('menu-technology')}}</a>
-                <a class="menu-item" href="#">{{$t('menu-values')}}</a>
-                <a class="menu-item" href="#">{{$t('menu-vacancies')}}</a>
-                <a class="menu-item" href="#">{{$t('menu-contacts')}}</a>
+                <a class="menu-item" href="#about">{{$t('menu-about')}}</a>
+                <a class="menu-item" href="#partners">{{$t('menu-partners')}}</a>
+                <a class="menu-item" href="#tech">{{$t('menu-technology')}}</a>
+                <a class="menu-item" href="#values">{{$t('menu-values')}}</a>
+                <a class="menu-item" href="#jobs">{{$t('menu-vacancies')}}</a>
+                <a class="menu-item" href="#contacts">{{$t('menu-contacts')}}</a>
             </div>
             <div class="ui tiny menu lang-list">
                 <div class="ui simple dropdown item">
@@ -117,7 +117,7 @@
         </div>
     </header>
     <main>
-        <article class="about">
+        <article id="about" class="about">
             <h2 class="header-about">{{$t('who-we-are')}}</h2>
 
                 <section class="ui center aligned text container">
@@ -150,7 +150,7 @@
                 </div>
         </article>
 
-        <article class="partner">
+        <article id="partners" class="partner">
             <h2 class="header-partner">{{$t('partner-h')}}</h2>
             <div class="ui center aligned text container">
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
@@ -165,7 +165,9 @@
 
         <article class="double">
             <section id="world" class="world">
-                <h2 class="ui center aligned header">наши продукты <br>работают по всему миру</h2>
+                <h2 class="ui center aligned header">
+                    {{$t('world1-h')}} <br>
+                    {{$t('world2-h')}}</h2>
                 <div class="map-wrapper">
                     <div class="map-detail">
                         <div class="map-detail-item flex">
@@ -173,8 +175,8 @@
                                 <img src="../assets/images/icon-map-devcenter.svg" alt="">
                             </div>
                             <div>
-                                <div class="map-detail-item__title">Центр разработки</div>
-                                <div class="map-detail-item__caption">Петрозаводск</div>
+                                <div class="map-detail-item__title">{{$t('map-legend1-h')}}</div>
+                                <div class="map-detail-item__caption">{{$t('map-legend1-l')}}</div>
                             </div>
                         </div>
                         <div class="map-detail-item flex">
@@ -182,8 +184,8 @@
                                 <img src="../assets/images/icon-map-partners.svg" alt="">
                             </div>
                             <div>
-                                <div class="map-detail-item__title">Партнеры</div>
-                                <div class="map-detail-item__caption">Штуттгарт, Берлин, Вена</div>
+                                <div class="map-detail-item__title">{{$t('map-legend2-h')}}</div>
+                                <div class="map-detail-item__caption">{{$t('map-legend2-l')}}</div>
                             </div>
                         </div>
                         <div class="map-detail-item flex">
@@ -191,8 +193,8 @@
                                 <img src="../assets/images/icon-map-clients.svg" alt="">
                             </div>
                             <div>
-                                <div class="map-detail-item__title">Клиенты</div>
-                                <div class="map-detail-item__caption">Разные страны и континенты</div>
+                                <div class="map-detail-item__title">{{$t('map-legend3-h')}}</div>
+                                <div class="map-detail-item__caption">{{$t('map-legend3-l')}}</div>
                             </div>
                         </div>
                     </div>
@@ -201,8 +203,8 @@
             <section id="tech" class="technology flex flex-x">
                 <div class="technology-main flex flex-x">
                     <div class="technology-main-text">
-                        <h2>Технологии,</h2>
-                        <p>которые мы используем</p>
+                        <h2>{{$t('tech1-h')}}</h2>
+                        <p>{{$t('tech2-h')}}</p>
                     </div>
                 </div>
                 <div class="technology-block flex">
@@ -245,7 +247,7 @@
             </section>
         </article>
         
-        <article class="values">
+        <article id="values" class="values">
             <h2 class="header-values">Наши ценности</h2>
             <div class="ui stackable two column grid container">
                 <div id="row" class="row">
@@ -537,7 +539,7 @@
             </div>
         </article>
     </main>
-    <footer>
+    <footer id="contacts">
         <div class="ui stackable three columns grid">
             <div class="column phone"><p>+7 (921) 228-20-17 <br> info@natlex.ru</p></div>
             <div class="column address"> <p>ООО «Натлекс» <br> улица Кирова, 8Б <br> 185035 Петрозаводск Россия</p></div>
