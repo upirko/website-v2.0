@@ -12,12 +12,12 @@
                 <label><span class="ui label hidden">Light mode On/Off</span></label>
             </div>
             <div class="ui large secondary inverted text menu menu-list">
-                <a class="menu-item" href="#">о нас</a>
-                <a class="menu-item" href="#">партнеры</a>
-                <a class="menu-item" href="#">технологии</a>
-                <a class="menu-item" href="#">ценности</a>
-                <a class="menu-item" href="#">вакансии</a>
-                <a class="menu-item" href="#">контакты</a>
+                <a class="menu-item" href="#">{{$t('menu-about')}}</a>
+                <a class="menu-item" href="#">{{$t('menu-partners')}}</a>
+                <a class="menu-item" href="#">{{$t('menu-technology')}}</a>
+                <a class="menu-item" href="#">{{$t('menu-values')}}</a>
+                <a class="menu-item" href="#">{{$t('menu-vacancies')}}</a>
+                <a class="menu-item" href="#">{{$t('menu-contacts')}}</a>
             </div>
             <div class="ui tiny menu lang-list">
                 <div class="ui simple dropdown item">
@@ -47,8 +47,8 @@
                 <img src="../assets/images/bg-people-s1.svg" alt="Natlex people">
             </div>
             <div class="text">
-                <h1>{{$t('slogan')}}<br><span class="highlight">Открывай новое.</span></h1>
-                <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">Узнай больше</a></div>            
+                <h1>{{$t('slogan1')}}<br><span class="highlight">{{$t('slogan2')}}</span></h1>
+                <div class="button-gradborder-wrap"><a href="#" class="teaser-button ">{{$t('button-learn-more')}}</a></div>            
             </div>
         </div>
         <div class="wrapper section-bottom">
@@ -56,8 +56,8 @@
                 <div class="ui stackable two column grid">
                     <div class="four wide computer sixteen wide tablet column">
                         <div class="aligner">
-                            <p class="text-create">Мы создаем программные продукты для инженеров, которые делают</p>
-                            <p class="header-business">бизнес сильнее</p>
+                            <p class="text-create">{{$t('we-create')}}</p>
+                            <p class="header-business">{{$t('business-strong')}}</p>
                         </div>
                     </div>
                     <div class="twelve wide computer sixteen wide tablet column">
@@ -66,10 +66,11 @@
                                 <figure class="ui segment flex">
                                     <img src="../assets/images/icon-s1-hook.svg" alt="" class="work-cards ui small image">
                                     <figcaption>
-                                        <h3 class="activity-type">Строительство</h3>
-                                        <p class="activity-text">Трекинг фасадных элементов<br>
-                                            Трекинг сборных элементов<br>
-                                            Управление материалами</p>                                    
+                                        <h3 class="activity-type">{{$t('activity1-h')}}</h3>
+                                        <p class="activity-text">
+                                        {{$t('activity1-text-1')}}<br>
+                                        {{$t('activity1-text-2')}}<br>
+                                        {{$t('activity1-text-3')}}</p>                                    
                                     </figcaption>
                                 </figure>
                             </div>
@@ -77,10 +78,11 @@
                                 <figure class="ui segment flex">
                                     <img src="../assets/images/icon-s1-tunnel.svg" alt="" class="work-cards ui small image">
                                     <figcaption>
-                                        <h3 class="activity-type">Туннели</h3>                                    
-                                        <p class="activity-text">Прокладка туннелей<br>
-                                            Управление приемкой работ<br>
-                                            Анализ повреждений</p>
+                                        <h3 class="activity-type">{{$t('activity2-h')}}</h3>                                    
+                                        <p class="activity-text">
+                                            {{$t('activity2-text-1')}}<br>
+                                            {{$t('activity2-text-2')}}<br>
+                                            {{$t('activity2-text-3')}}</p>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -88,10 +90,11 @@
                                 <figure class="ui segment flex">
                                     <img src="../assets/images/icon-s1-sensor.svg" alt="" class="work-cards ui small image">
                                     <figcaption>
-                                        <h3 class="activity-type">Cенсоры</h3>                                    
-                                        <p class="activity-text">Геомониторинг<br>
-                                            Мониторинг строительства<br>
-                                            Анализ данных сенсоров</p>                                    
+                                        <h3 class="activity-type">{{$t('activity3-h')}}</h3>                                    
+                                        <p class="activity-text">
+                                            {{$t('activity3-text-1')}}<br>
+                                            {{$t('activity3-text-2')}}<br>
+                                            {{$t('activity3-text-3')}}</p>                                    
                                     </figcaption>
                                 </figure>
                             </div>
@@ -99,10 +102,11 @@
                                 <figure class="ui segment flex">
                                     <img src="../assets/images/icon-s1-network.svg" alt="" class="work-cards ui small image">
                                     <figcaption>
-                                        <h3 class="activity-type">Команды</h3>                                    
-                                        <p class="activity-text">Совместная работа<br>
-                                            Управление качеством<br>
-                                            Документооборот</p>
+                                        <h3 class="activity-type">{{$t('activity4-h')}}</h3>                                    
+                                        <p class="activity-text">
+                                            {{$t('activity4-text-1')}}<br>
+                                            {{$t('activity4-text-2')}}<br>
+                                            {{$t('activity4-text-3')}}</p>  
                                     </figcaption>
                                 </figure>
                             </div>
@@ -114,49 +118,48 @@
     </header>
     <main>
         <article class="about">
-            <h2 class="header-about">Кто мы</h2>
+            <h2 class="header-about">{{$t('who-we-are')}}</h2>
 
                 <section class="ui center aligned text container">
                     <div class="ui divider"></div>
-                    <p class="text-about-1">Натлекс разрабатывает веб- и мобильные приложения, которые используются на строительных площадках от Канады до Сингапура.</p>
+                    <p class="text-about-1">{{$t('text-about-1')}}</p>
                     <div class="ui divider"></div>
                 </section>
 
                 <section class="ui center aligned text container">
-                    <p class="text-about-2">Мы разрабатываем технологические решения для управления рисками, документооборота
-                         и обработки данных при прокладке туннелей, строительстве небоскребов и стадионов. 
-                         Наши системы включают в себя управление сменами строителей, сбор и анализ данных с любых датчиков, 
-                         интеграцию 3D-моделей зданий. Наши продукты применяются на проектах с большими бюджетами.</p>
+                    <p class="text-about-2">{{$t('text-about-2')}}</p>
                 </section>
 
                 <section class="ui text container">
-                    <h3 class="header-short-about">Кратко о нас</h3>
+                    <h3 class="header-short-about">{{$t('short-about')}}</h3>
                     <div class="ui stackable two column grid">
                         <div class="column">
-                            <p>Интернациональная команда</p>
-                            <p>Говорим на русском, английском и немецком</p>
-                            <p>Работаем по свободному графику</p>
+                            <p>{{$t('few-words-1')}}</p>
+                            <p>{{$t('few-words-2')}}</p>
+                            <p>{{$t('few-words-3')}}</p>
                         </div>
                         <div class="column">
-                            <p>Принимаем участие в IT-семинарах и конференциях</p>
-                            <p>Любим крутые вечеринки</p>
-                            <p>Оплачиваем время вашей стажировки</p>
+                            <p>{{$t('few-words-4')}}</p>
+                            <p>{{$t('few-words-5')}}</p>
+                            <p>{{$t('few-words-6')}}</p>
                         </div>
                     </div>
                 </section>
                 <div class="know-button ">
-                    <a href="#" class="ntx-button rounded outlined inverted">Присоединяйся</a>
+                    <a href="#" class="ntx-button rounded outlined inverted">{{$t('button-join')}}</a>
                 </div>
         </article>
 
         <article class="partner">
-            <h2 class="header-partner">Наш партнер</h2>
+            <h2 class="header-partner">{{$t('partner-h')}}</h2>
             <div class="ui center aligned text container">
                 <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
                 <p class="text-partner"> 
                     <a id="ITC" href="https://www.itc-engineering.com/">ITC Engineering</a>
-                     — международная компания, специализирующаяся на разработке программных продуктов и услуг в мировом масштабе. <br> <br>
-                    Главной целью компании является внедрение IT-инноваций в таких областях, как строительство, государственное управление, страхование и инжиниринг.</p>
+                     {{$t('partner-description1')}}
+                     <br> <br>
+                    {{$t('partner-description2')}}
+                </p>
             </div>
         </article>
 

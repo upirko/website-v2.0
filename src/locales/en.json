@@ -1,3 +1,53 @@
 {
-  "slogan": "Create. Evolve."
+  
+  "menu-about": "about us",
+  "menu-partners": "partners",
+  "menu-technology": "techs",
+  "menu-values": "values",
+  "menu-vacancies": "careers",
+  "menu-contacts": "contacts",
+
+
+  "slogan1": "Create. Evolve.",
+  "slogan2": "Explore.",
+  "button-learn-more": "Learn more",
+  "we-create": "We create digital products for engineers and constructors who make",
+  "business-strong": "business stronger",
+  "activity1-h": "Construction",
+  "activity1-text-1": "Facade Logistics",
+  "activity1-text-2": "Precast Elements Tracking",
+  "activity1-text-3": "Material Management",
+  "activity2-h": "Tunnel",
+  "activity2-text-1": "Tunneling",
+  "activity2-text-2": "Acceptance management",
+  "activity2-text-3": "Damages Management",
+  "activity3-h": "Sensors",
+  "activity3-text-1": "Geomonitoring",
+  "activity3-text-2": "Building monitoring",
+  "activity3-text-3": "Sensors Data Analysis",
+  "activity4-h": "Teams",
+  "activity4-text-1": "Collaboration",
+  "activity4-text-2": "Quality Management",
+  "activity4-text-3": "Document Management",
+
+  "who-we-are": "about us",
+  "text-about-1": "Natlex develops web and mobile applications that used on construction sites anywhere from Canada to Singapore.",
+  "text-about-2": "We develop technical solutions to manage documents, risks, and the construction processes of building tunnels, skyscrapers and stadiums. Our systems manage employee shifts, collect and analyze data from all kind of devices sensors, integrate buildings 3D models. Our products are used on construction sites with million dollar budgets.",
+  "short-about": "in a few words",
+  "few-words-1": "International distirbuted team",
+  "few-words-2": "Speaking English, German, and Russian languages",
+  "few-words-3": "Flexible working hours",
+  "few-words-4": "Participating in IT-workshops and conferences",
+  "few-words-5": "We like to party",
+  "few-words-6": "Paid internship through live project",
+  "button-join": "Join us now",
+
+  "partner-h": "our partner",
+  "partner-description1": "is an international company which specializes on development products for contructions sites worldwide.",
+  "partner-description2": "The main goal of our partnership is to bring IT-innovations to building constructions, government management, insurance and engineering."
+
+
+
+
+
 }
