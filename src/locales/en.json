@@ -56,7 +56,44 @@
   "map-legend3-l":"In 20+ countries",
 
   "tech1-h": "techs",
-  "tech2-h": "we use"
+  "tech2-h": "we use",
+
+  "values-header": "Our values",
+  "value1-h": "Team",
+  "value1-text": "Our teams are supported with comfortable workspaces. The company pays for your education, courses, and conferences, build transparent relationships and support your ideas with attention, resources, and finances.",
+  "value2-h": "Transparency ",
+  "value2-text": "The company values direct and transparent communication. There is a matrix of roles and levels for each member which brings definite responsibilities. Every employee gets an annual performance review and a 360 degrees assessment. Every quarter there is a financial report of the company being announced.",
+  "value3-h": "Work-life balance ",
+  "value3-text": "There are flexible working hours in the company. We support hobbies, sport, and inner team meet-ups financially. Couches are invited to improve our soft skills. There are also opportunities to attend a psychologist, an oculist and a neurologist",
+  
+  "join-header": "Careers",
+  "vacancy-fe": "Frontend  developer",
+  "vacancy-be": "Backend  developer",
+  "vacancy-pm": "Project manager",
+  "vacancy-devops": "DevOps engineer",
+  "vacancy-qa": "QA engineer",
+  "vacancy-mobile-ios": "IOS developer",
+  "vacancy-mobile-android": "Android developer",
+  "vacancy-intern": "Intern",
+  "button-apply": "Apply",
+
+  "expect-header1": "We expect",
+  "expect-header2": "from an employee",
+  "expect1-h": "Responsibilities",
+  "expect1-text": "There is no strict hierarchy in the company, but there are areas of responsibility. The company trusts every employee and he or she has the ability to properly allocate time and effort.",
+  "expect2-h": "Transparency",
+  "expect2-text": "Employees of the company have doubts, ask questions, share new ideas, ask for help and talk about their desires.",
+  "expect3-h": "Desire for growth",
+  "expect3-text": "Employees are motivated, professionally growing and developing with the company. Employees are interested in the result and quality of the work performed.",
+  "expect-button": "Send us a CV",
+
+
+  "intern-header": "internship",
+  "intern-text1": "First of all, Natlex is a team of people who care. If you're a student or would like to try IT techs, we are ready to support you, so you can make your first step in web development.",
+  "intern-text2": "All you need is to apply!",
+  "intern-button": "Apply"
+
+
   
 
 
