@@ -570,7 +570,7 @@ export default {
         },
 
         handleScroll() {
-            this.scrolled = (this.limitPosition < window.scrollY);
+            this.scrolled = this.limitPosition < window.scrollY;
         }
     },
     
