@@ -428,6 +428,10 @@ article {
        padding-top: 4rem;
        padding-bottom: 4rem;
    }
+   &.double {
+       position: relative;
+       z-index: 1;
+   }
 }
 
 .about {    
