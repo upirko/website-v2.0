@@ -51,9 +51,11 @@ h3 {
     .checkbox {
         display: none;
     }
-    .menu-list {
+    .menu.menu-list {
         display: none;
-        .menu-item{
+        .menu-item {
+            font-family: $primary-font;
+            font-weight: 100;
             color: $text-white;
             text-transform: uppercase;
             margin: 0 0.9rem;
@@ -62,14 +64,10 @@ h3 {
     }
     .tiny.menu.lang-list {
         display: none;
-        background-color: transparent;
-        border-color: $text-white;
-        .item {
-            color: $text-white;
-        }
+        box-shadow: none;
     }
     @media screen and (min-width: 991px) {        
-        .menu-list {
+        .menu.menu-list {
             display: flex;
             align-items: center;
             flex: 1;
@@ -87,14 +85,14 @@ h3 {
         }
     }
     @media screen and (min-width: 1024px) {
-        .menu-list {
+        .menu.menu-list {
             .menu-item {
                 font-size: 0.875rem;
             }
         }
     }
     @media screen and (min-width: 1280px) {
-        .menu-list {
+        .menu.menu-list {
             .menu-item {
                 font-size: 1rem;
             }
@@ -112,6 +110,9 @@ h3 {
     padding: 0.5rem;
     padding-right: 0.3rem;
     font-size: 1.3rem;
+    .elevated & {
+        top: 4px;
+    }
     .content {
         display: block;
     }
@@ -131,6 +132,32 @@ h3 {
         left: 0;
         right: 0;
         z-index: 3;
+        transition: all 0.5s ease;
+        &.elevated {
+            &:not(.opened) {
+                background-color: $text-white-default;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                box-shadow: 0 12px 18px rgba(68, 110, 92, 0.2);
+                .menu-toggler {
+                    color: $header-black;
+                }
+                .nav-box {
+                    .menu-item {
+                        color: $text-green;
+                    }
+                }
+            }
+        }
+        &:not(.elevated) {
+            .tiny.menu.lang-list {
+                background-color: transparent;
+                border-color: $text-white;
+                .item {
+                    color: $text-white;
+                }
+            }
+        }
     }
     &.opened {
         z-index: 50;
@@ -161,11 +188,11 @@ h3 {
             display: flex;
             margin-top: 0;
             flex-direction: column;
-            .item {
+            .menu-item {
                 width: 100%;
                 padding: 1rem;
                 margin-bottom: 0.5rem;
-                justify-content: center;
+                text-align: center;
             }
         }
         .tiny.menu.lang-list {
@@ -188,6 +215,12 @@ h3 {
     }
     @media screen and (min-width: 768px) {
         padding: 2rem 2rem 0 3rem;
+        &.elevated {
+            &:not(.opened) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
     }
 }
 header {   
@@ -394,6 +427,10 @@ article {
     &, &.inverted.segment {
        padding-top: 4rem;
        padding-bottom: 4rem;
+   }
+   &.double {
+       position: relative;
+       z-index: 1;
    }
 }
 

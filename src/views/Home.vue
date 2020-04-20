@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- change here class to "top-navigation sticky opened" to show mobile menu -->
-    <nav class="top-navigation sticky">
+    <nav :class="{'elevated': scrolled}" class="top-navigation sticky">
         <div class="logo">
             <img src="../assets/images/logo-natlex-e.svg" alt="Emblem" class="emblem">
             <img src="../assets/images/logo-natlex-t.svg" alt="Natlex" class="name">
@@ -553,7 +553,10 @@ export default {
                 {locale: 'ru', label: 'Rus'},
                 {locale: 'en', label: 'Eng'},
                 {locale: 'de', label: 'Ger'}
-            ]
+            ],
+            limitPosition: 64,
+            scrolled: false,
+            lastPosition: 0
         }
     },
     computed: {
@@ -564,7 +567,19 @@ export default {
     methods: {
         changeLang(lang) {
             this.$i18n.locale = lang;
+        },
+
+        handleScroll() {
+            this.scrolled = this.limitPosition < window.scrollY;
         }
+    },
+    
+    created() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
     }
 }
 </script>
