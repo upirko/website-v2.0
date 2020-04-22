@@ -9,7 +9,8 @@
         <div class="nav-box">            
             <div class="ui toggle checkbox checked">
                 <input type="checkbox" tabindex="0" class="hidden">
-                <label><span class="ui label hidden">Light mode On/Off</span></label>
+                <!--<label><span class="ui label hidden">Light mode On/Off</span></label>  
+                спрятал переключатель на темную тему, т.е. пока не делаем-->
             </div>
             <div class="ui large secondary inverted text menu menu-list">
                 <a class="menu-item" href="#about">{{$t('menu-about')}}</a>
@@ -153,7 +154,7 @@
         <article id="partners" class="partner">
             <h2 class="header-partner">{{$t('partner-h')}}</h2>
             <div class="ui center aligned text container">
-                <img src="../assets/images/logo-s3-itc.svg" alt="ITC">
+                <img class="logo-partners" src="../assets/images/logo-s3-itc.svg" alt="ITC">
                 <p class="text-partner"> 
                     <a id="ITC" href="https://www.itc-engineering.com/">ITC Engineering</a>
                      {{$t('partner-description1')}}
