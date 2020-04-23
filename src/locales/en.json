@@ -77,6 +77,36 @@
   "vacancy-intern": "Intern",
   "button-apply": "Apply",
 
+  "fe-descr-h-1": "Techs:",
+  "fe-descr-text-1": "AngularJS, Angular, Node.js",
+  "fe-descr-h-2": "Basic expectations:",
+  "fe-descr-text-2": "- Development using AngularJS, Angular and server-side Node.js <br> - Solid knowledge and understanding of JavaScript principles, mastering CSS3, LESS/SASS, HTML5 <br>- Knowledge and understanding of OOP fundamentals <br>- English knowledge at the technical documentation reading level<br> - Interest in the result<br>- Passion for the process <br> - Aspiration for self-development",
+  "fe-descr-h-3": "Good to know:",
+  "fe-descr-text-3": "- Experience with version control systems (git) and build systems (Gradle/Gulp/npm)<br> - Experience of testing JavaScript (unit, TDD, BDD)<br> - Experience with other modern JS frameworks",
+  "fe-descr-h-4": "We also provide:",
+  "fe-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
+
+
+  "be-descr-h-1": "Techs:",
+  "be-descr-text-1": "Java, Spring, Hibernate, JPA, PosetgreSQL/MongoDB, RabbitMQ",
+  "be-descr-h-2": "Basic expectations:",
+  "be-descr-text-2": "- Excellent Java knowledge <br> - Possession of OOP, OOD and design patterns <br>- Understanding of Rest and microservices architecture, development of multi-threaded and distributed applications <br>- Experience with Spring, Hibernate, JPA frameworks <br> - Experience with SQL (PostgreSQL) and NoSQL (MongoDB) databases <br>- High level of self-organization and personal responsibility <br> - Initiative, teamwork skills",
+  "be-descr-h-3": "Good to know:",
+  "be-descr-text-3": "- Understanding and experience with Unit Testing <br> - Understanding the basics of network protocols <br> - Experience with Gradle assembly systems and ElasticSearch, Redis, Docker <br> - English knowledge at B1 level and above",
+  "be-descr-h-4": "We also provide:",
+  "be-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
+
+  "pm-descr-h-1": "Basic expectations:",
+  "pm-descr-text-1": "- Knowledge of agile development methodologies <br> - Understanding the technical aspects of web application development <br>- Experience in building self-organizing teams <br>- Skills of communication with customers and the development team  <br> - Skills in strategic thinking and long-term planning <br>- Excellent written and spoken English (upper-intermediate) skills <br> - Organizational skills, including attention to detail and multitasking <br>- Ability to quickly grasp the technical aspects of project implementation, advanced logic <br>- Skill in delegation of tasks <br>- Curiosity",
+  "pm-descr-h-2": "Good to know:",
+  "pm-descr-text-2": "- Experience in developing web applications <br> - Leadership skills, team management experience with 5 team members or more <br> - German language knowledge  ",
+  "pm-descr-h-3": "We also provide:",
+  "pm-descr-text-3": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
+
+
+
+
+
   "expect-header1": "We expect",
   "expect-header2": "from an employee",
   "expect1-h": "Responsibilities",

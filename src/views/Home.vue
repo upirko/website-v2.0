@@ -10,7 +10,7 @@
             <div class="ui toggle checkbox checked">
                 <input type="checkbox" tabindex="0" class="hidden">
                 <!--<label><span class="ui label hidden">Light mode On/Off</span></label>  
-                спрятал переключатель на темную тему, т.е. пока не делаем-->
+                спрятал переключатель на темную тему, т.к. пока не делаем-->
             </div>
             <div class="ui large secondary inverted text menu menu-list">
                 <a class="menu-item" href="#about">{{$t('menu-about')}}</a>
@@ -327,7 +327,46 @@
                     </div>
                     <div class="ten wide stretched column">
                         <div class="ui segment tab-body">
-                            <div class="tab-body-content">
+                            <div id = "fe-vacancy" class="tab-body-content">
+                                <h4>{{$t('fe-descr-h-1')}}</h4>
+                                <p>{{$t('fe-descr-text-1')}}</p>
+
+                                <h4>{{$t('fe-descr-h-2')}}</h4>
+                                <p v-html="$t('fe-descr-text-2')"></p>
+                                    
+                                <h4>{{$t('fe-descr-h-3')}}</h4>
+                                <p v-html="$t('fe-descr-text-3')"></p>
+                                
+                                <h4>{{$t('fe-descr-h-4')}}</h4>
+                                <p v-html="$t('fe-descr-text-4')"></p>
+                                
+                            </div>
+                            <div id = "be-vacancy" class="tab-body-content">
+                                <h4>{{$t('be-descr-h-1')}}</h4>
+                                <p>{{$t('be-descr-text-1')}}</p>
+
+                                <h4>{{$t('be-descr-h-2')}}</h4>
+                                <p v-html="$t('be-descr-text-2')"></p>
+                                    
+                                <h4>{{$t('be-descr-h-3')}}</h4>
+                                <p v-html="$t('be-descr-text-3')"></p>
+                                
+                                <h4>{{$t('be-descr-h-4')}}</h4>
+                                <p v-html="$t('be-descr-text-4')"></p>
+                                
+                            </div>
+                            <div id = "pm-vacancy" class="tab-body-content">
+                                <h4>{{$t('pm-descr-h-1')}}</h4>
+                                <p v-html="$t('pm-descr-text-1')"></p>
+
+                                <h4>{{$t('pm-descr-h-2')}}</h4>
+                                <p v-html="$t('pm-descr-text-2')"></p>
+                                    
+                                <h4>{{$t('pm-descr-h-3')}}</h4>
+                                <p v-html="$t('pm-descr-text-3')"></p>
+                                                       
+                            </div>
+                            <div id = "devops-vacancy" class="tab-body-content">
                                 <h4>Технологии</h4>
                                 <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
 
@@ -347,6 +386,88 @@
                                 </p>
                                 
                             </div>
+                            <div id = "qa-vacancy" class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                    
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                
+                            </div>
+                            <div id = "ios-vacancy" class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                    
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                
+                            </div>
+                            <div id = "android-vacancy" class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                    
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                
+                            </div>
+                            <div id = "intern-vacancy" class="tab-body-content">
+                                <h4>Технологии</h4>
+                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+
+                                <h4>Опыт работы</h4>
+                                <p>OOP, OOD, design patterns</p>
+
+                                <h4>Пожелания к кандидату</h4>
+                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
+                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                    
+                                <h4>Будет плюсом</h4>
+                                <p>
+                                    — Понимание и опыт применения Unit-тестирования;<br>
+                                    — Понимание основ сетевых протоколов;<br>
+                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
+                                    — Знание английского на уровне чтения технической документации.
+                                </p>
+                                
+                            </div>
+
+
                             <div class="vacancy-button-wrapper">
                                 <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
                             </div>
@@ -370,7 +491,7 @@
                             <p  >  <span class="header-triangle">{{$t('expect-header1')}}</span><br>{{$t('expect-header2')}}</p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="expect-column">
                         <section>
                             <h4 class="h-expect">{{$t('expect1-h')}}</h4>
                             <p>{{$t('expect1-text')}} </p>
