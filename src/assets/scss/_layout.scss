@@ -761,6 +761,8 @@ article {
             padding-top: 6rem;
             padding-bottom: 6rem;
 
+            
+
         }
 
         div#row {
@@ -906,6 +908,42 @@ article.jobs {
                     color: $text-semiblack;
                     &:last-child {margin-bottom: 0}
                 }
+
+                #fe-vacancy {
+                    display: none;
+                }
+
+                #be-vacancy {
+                    display: none;
+                }
+
+                #pm-vacancy {
+                    display: block;
+                }
+
+                #devops-vacancy {
+                    display: none;
+                }
+
+                #qa-vacancy {
+                    display: none;
+                }
+
+                #ios-vacancy {
+                    display: none;
+                }
+
+                #android-vacancy {
+                    display: none;
+                }
+
+                #intern-vacancy {
+                    display: none;
+                }
+        
+
+
+
             }
         }
     }
@@ -952,8 +990,14 @@ article.jobs {
                 margin-bottom: 20px;
                 padding: 0;
                 overflow: visible;
+
             }
+
+            
         }
+
+        
+
         .vacancy-button-wrapper {
             text-align: center;
             padding: 0;
@@ -980,6 +1024,7 @@ article.jobs {
     
     min-height: 100vh; // todo remove    
     background-color: #FFFF;
+    margin: 5% 0 5%;
 
     &, &.inverted.segment {
         padding-top: 4rem;
@@ -1033,8 +1078,17 @@ article.jobs {
         font-size: 1rem;
         line-height: 2em;
         padding: 5px;
+        margin-bottom: 30px;
     }
 
+    .expect-column {
+        margin-top: 10%;
+    }
+
+    .expect-button-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     
 
@@ -1045,6 +1099,29 @@ article.jobs {
         &, &.inverted.segment {
             padding-top: 6rem;
             padding-bottom: 6rem;
+
+
+            .expect {
+                display:flex!important;
+                justify-content: flex;
+            }
+            .exp-triangle-block{
+                position:absolute;
+                margin: 5% 0 0 13%;
+    
+            }
+            .expect-column {
+                width: 40%;
+                min-height: 50%;
+                margin-left: 42%;
+                position: relative;
+                z-index: 3;
+                border-radius: 15px;
+                box-shadow: 0 0 7px 0 $light-gray;
+                background: $text-white-default;
+                padding: 32px 60px;
+    
+            }
 
         }
 
