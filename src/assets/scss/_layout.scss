@@ -910,7 +910,7 @@ article.jobs {
                 }
 
                 #fe-vacancy {
-                    display: none;
+                    display: block;
                 }
 
                 #be-vacancy {
@@ -918,7 +918,7 @@ article.jobs {
                 }
 
                 #pm-vacancy {
-                    display: block;
+                    display: none;
                 }
 
                 #devops-vacancy {
@@ -937,6 +937,7 @@ article.jobs {
                     display: none;
                 }
 
+                // Интерна пока не задействуем. Описания у нас нет. 
                 #intern-vacancy {
                     display: none;
                 }

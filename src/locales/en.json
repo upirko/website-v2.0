@@ -86,7 +86,6 @@
   "fe-descr-h-4": "We also provide:",
   "fe-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
 
-
   "be-descr-h-1": "Techs:",
   "be-descr-text-1": "Java, Spring, Hibernate, JPA, PosetgreSQL/MongoDB, RabbitMQ",
   "be-descr-h-2": "Basic expectations:",
@@ -103,8 +102,40 @@
   "pm-descr-h-3": "We also provide:",
   "pm-descr-text-3": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
 
+  "devops-descr-h-1": "Duties:",
+  "devops-descr-text-1": "- Automation of assemblies, deployment and other processes (Gitlab CI/CD, Teamcity) <br> - Building and operating a cloud infrastructure (Terraform, Kubernetes, Helm, Docker) <br> - Monitoring of infrastructure (ELK, Prometheus/Grafana) <br> - Integration of new functionality in active interaction with the development team <br> - Searching, finding and removing problems and vulnerabilities ",
+  "devops-descr-h-2": "Basic expectations:",
+  "devops-descr-text-2": "- Experience with Docker container virtualization systems <br> - Deploy and support CI tools (Jenkins) <br> - Administration and configuration of cloud resources (AWS, Azure) <br> - English proficiency in reading technical documentation",
+  "devops-descr-h-3": "We also provide:",
+  "devops-descr-text-3": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
+
+  "qa-descr-h-1": "Duties:",
+  "qa-descr-text-1": "- Making checklists, test cases, testing scripts <br> - Analysis of test documentation and keeping it up to date <br> - Manual testing: regression testing, functional testing, integration testing, research testing  <br> - Analysis of functional requirements, starting with the stage of task definition <br> - Documentation of detected errors and control of their correction <br> - Test base creation and support <br> - Testing REST web services and basic protocols (HTTP/S, TCP/IP) in multi-layered test infrastructure ",
+  "qa-descr-h-2": "Basic expectations:",
+  "qa-descr-text-2": "- Experience in writing and maintaining test documentation <br> - Knowledge and ability to put test design techniques into practice <br> - Experience in testing client-server applications <br> - Experience with bug tracking and test tracking systems <br> - Experience with Git systems <br> - Confidence in owning DevTools (Console) <br> - Experience with the REST API <br> - SQL knowledge at the level of writing simple queries <br> - Basic knowledge of HTML, CSS and JavaScript <br> - English knowledge at the level of reading and writing technical documentation <br> - Know how to correctly formulate your thoughts, have a heightened sense of responsibility, know how to work in a team ",
+  "qa-descr-h-3": "Good to know:",
+  "qa-descr-text-3": "- Experience in mobile apps testing <br> - Knowledge of programming language: Java <br> - Understanding of OOP and test development patterns <br> - Experience in Test Automation (GUI, load) <br> - Ad hoc testing skills <br> - Linux Experience <br> - Experience with Docker, Jenkins/TeamCity",
+  "qa-descr-h-4": "We also provide:",
+  "qa-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
+
+  "ios-descr-h-1": "Techs:",
+  "ios-descr-text-1": "SwiftUI, CoreData",
+  "ios-descr-h-2": "Basic expectations:",
+  "ios-descr-text-2": " - Experience of custom development of ios applications in a team  at least 1 year <br> - Reliable Swift knowledge <br> - Experience with CocoaPods or Carthage <br> - Ability to understand other people's code <br> - Understanding REST API <br> - Understanding Git Flow <br> - Understanding architectural design patterns (MVP, MVVM, Clean)",
+  "ios-descr-h-3": "Good to know:",
+  "ios-descr-text-3": " - Writing experience of Unit / UI Tests <br> - Experience with CoreData / Realm <br> - Understanding of Material Design principles <br> - Desire and ability to take responsibility <br> - Communicability, willingness to work in a team of like-minded people <br> - Having ready-made applications on the App Store will be an advantage <br> - Presence of code in GitHub/Bitbucket/Gitlab",
+  "ios-descr-h-4": "We also provide:",
+  "ios-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
 
 
+  "android-descr-h-1": "Techs:",
+  "android-descr-text-1": "Kotlin, Coroutines, Koin, Retrofit 2, Data Binding, Realm DB",
+  "android-descr-h-2": "Basic expectations:",
+  "android-descr-text-2": " - Experience in custom development of Android applications in a team over 1 year <br> - Confident knowledge of Java and Android SDK <br> - Experience with Android Studio and Gradle <br> - The ability to understand other people's code <br> - Understanding the REST API <br> - Understanding Git Flow <br> - Understanding architectural design patterns (MVP, MVVM, Clean) ",
+  "android-descr-h-3": "Good to know:",
+  "android-descr-text-3": " - Kotlin knowledge <br> - Writing experience Unit / UI Tests <br> - Experience with RxJava <br> - Experience with SQLite / Realm <br> - Understanding of Material Design principles <br> - Desire and ability to take responsibility <br> - Communicability, willingness to work in a team of soulmates. <br> - Having ready-made apps on Google Play is an advantage ",
+  "android-descr-h-4": "We also provide:",
+  "android-descr-text-4": "- Official registration, competitive salary, vacation - 44 days <br>- Flexible work schedule <br>- Office in the city center <br>- Professional and personal growth <br>- Training at courses and conferences <br>- English Language Training with with teacher In office <br>- Promotion and compensation of sports activities <br>- Business trips to Germany to meet colleagues or clients and solve strategic tasks<br>- Internal hackatons and seminars <br>- Sauna in the office <br>- Juice, fruits, good coffee and other delicacies",
 
 
   "expect-header1": "We expect",
@@ -121,8 +152,26 @@
   "intern-header": "internship",
   "intern-text1": "First of all, Natlex is a team of people who care. If you're a student or would like to try IT techs, we are ready to support you, so you can make your first step in web development.",
   "intern-text2": "All you need is to apply!",
-  "intern-button": "Apply"
+  "intern-button": "Apply",
 
+  "button-write-message": "Send a message",
+  "button-send-CV": "Send a CV",
+  "label-name":"Name",
+  "placeholder-name":"Name",
+  "label-mail":"E-mail",
+  "placeholder-male":"email@box.com",
+  "label-message":"Message",
+  "placeholder-message":"Hi , ...",
+  "label-agree":"I have read and agree to the Privacy policy.",
+  "label-agree-dsclmr":"By clicking this button, I consent to processing my",
+  "label-pers-data":"personal data",
+  "button-send": "Send",
+  "Preferred-position": "Preferred position",
+  "Select-position": "Select a position",
+  "your-phone": "Phone number",
+  "attach-file": "Attach a CV file, if available:",
+  
+  "column-adress": "Natlex LLC <br> Kirova street 8B <br> 185035 Petrozavodsk, Russia"
 
   
 

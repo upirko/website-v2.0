@@ -314,15 +314,16 @@
                             <a class="item">
                                 <span>{{$t('vacancy-mobile-android')}}</span>
                             </a>
-                            <a class="item">
+                                <!--<a class="item">
                                 <span>{{$t('vacancy-intern')}}</span>
-                            </a>
+                            </a> 
+                            Пока скрыл таб для стажеров, т.к. нет описания и не понятно - будем ли размещать его -->
                             
                         </div>
                         <div class="socials flex flex-x">
-                            <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
-                            <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
-                            <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
+                            <a href="https://petrozavodsk.hh.ru/employer/2713625" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                            <a href="https://career.habr.com/companies/natlex" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                            <a href="https://tt.linkedin.com/company/natlex-ltd" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="ten wide stretched column">
@@ -363,108 +364,67 @@
                                 <p v-html="$t('pm-descr-text-2')"></p>
                                     
                                 <h4>{{$t('pm-descr-h-3')}}</h4>
-                                <p v-html="$t('pm-descr-text-3')"></p>
+                                <p v-html="$t('pm-descr-text-3')"></p>                          
+                            </div>
+
+                            <div id = "devops-vacancy" class="tab-body-content">
+                                <h4>{{$t('devops-descr-h-1')}}</h4>
+                                <p v-html="$t('devops-descr-text-1')"></p>
+
+                                <h4>{{$t('devops-descr-h-2')}}</h4>
+                                <p v-html="$t('devops-descr-text-2')"></p>
+                                    
+                                <h4>{{$t('devops-descr-h-3')}}</h4>
+                                <p v-html="$t('devops-descr-text-3')"></p>
                                                        
                             </div>
-                            <div id = "devops-vacancy" class="tab-body-content">
-                                <h4>Технологии</h4>
-                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
 
-                                <h4>Опыт работы</h4>
-                                <p>OOP, OOD, design patterns</p>
-
-                                <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
-                                    
-                                <h4>Будет плюсом</h4>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
-                                
-                            </div>
+                            
                             <div id = "qa-vacancy" class="tab-body-content">
-                                <h4>Технологии</h4>
-                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                                <h4>{{$t('qa-descr-h-1')}}</h4>
+                                <p v-html="$t('qa-descr-text-1')"></p>
 
-                                <h4>Опыт работы</h4>
-                                <p>OOP, OOD, design patterns</p>
-
-                                <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                <h4>{{$t('qa-descr-h-2')}}</h4>
+                                <p v-html="$t('qa-descr-text-2')"></p>
                                     
-                                <h4>Будет плюсом</h4>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
+                                <h4>{{$t('qa-descr-h-3')}}</h4>
+                                <p v-html="$t('qa-descr-text-3')"></p>
+                                
+                                <h4>{{$t('qa-descr-h-4')}}</h4>
+                                <p v-html="$t('qa-descr-text-4')"></p>
                                 
                             </div>
                             <div id = "ios-vacancy" class="tab-body-content">
-                                <h4>Технологии</h4>
-                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                                <h4>{{$t('ios-descr-h-1')}}</h4>
+                                <p>{{$t('ios-descr-text-1')}}</p>
 
-                                <h4>Опыт работы</h4>
-                                <p>OOP, OOD, design patterns</p>
-
-                                <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                <h4>{{$t('ios-descr-h-2')}}</h4>
+                                <p v-html="$t('ios-descr-text-2')"></p>
                                     
-                                <h4>Будет плюсом</h4>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
+                                <h4>{{$t('ios-descr-h-3')}}</h4>
+                                <p v-html="$t('ios-descr-text-3')"></p>
+                                
+                                <h4>{{$t('ios-descr-h-4')}}</h4>
+                                <p v-html="$t('ios-descr-text-4')"></p>
+                                
                                 
                             </div>
                             <div id = "android-vacancy" class="tab-body-content">
-                                <h4>Технологии</h4>
-                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
+                                <h4>{{$t('android-descr-h-1')}}</h4>
+                                <p>{{$t('android-descr-text-1')}}</p>
 
-                                <h4>Опыт работы</h4>
-                                <p>OOP, OOD, design patterns</p>
-
-                                <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
+                                <h4>{{$t('android-descr-h-2')}}</h4>
+                                <p v-html="$t('android-descr-text-2')"></p>
                                     
-                                <h4>Будет плюсом</h4>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
+                                <h4>{{$t('android-descr-h-3')}}</h4>
+                                <p v-html="$t('android-descr-text-3')"></p>
+                                
+                                <h4>{{$t('android-descr-h-4')}}</h4>
+                                <p v-html="$t('android-descr-text-4')"></p>
                                 
                             </div>
                             <div id = "intern-vacancy" class="tab-body-content">
-                                <h4>Технологии</h4>
-                                <p>J2SE, Spring, Hibernate, JPA, MySQL/MongoDB</p>
-
-                                <h4>Опыт работы</h4>
-                                <p>OOP, OOD, design patterns</p>
-
-                                <h4>Пожелания к кандидату</h4>
-                                <p>Понимание сервис-ориентированной архитектуры, разработка многопоточных и распределенных приложений.
-                                    Высокий уровень самоорганизованности и личной ответственности. Инициативность, умение работать в команде.</p>
-                                    
-                                <h4>Будет плюсом</h4>
-                                <p>
-                                    — Понимание и опыт применения Unit-тестирования;<br>
-                                    — Понимание основ сетевых протоколов;<br>
-                                    — Опыт работы с системами контроля версий (git) и системами сборки (Gradle/maven/ant);<br>
-                                    — Знание английского на уровне чтения технической документации.
-                                </p>
-                                
+                                  <!-- Скрыл таб для этого блока. Описания для стажера у нас нет. Может вернем в будущем  -->
                             </div>
 
 
@@ -538,11 +498,11 @@
                                 <input type="text" name="first-name" required placeholder="Имя">
                             </div>
                             <div class="field required">
-                                <label>Электронная почта</label>
+                                <label>{{$t('label-mail')}}</label>
                                 <input type="text" name="last-name" required placeholder="email@box.com">
                             </div>
                             <div class="field required">
-                                <label>Сообщение</label>
+                                <label>{{$t('label-message')}}</label>
                                 <textarea name="user-message" cols="30" rows="10" placeholder="Добрый день, ..."></textarea>    
                             </div>
                             <div class="captcha-box">
@@ -553,13 +513,12 @@
                                 <div class="disclaimer-box">
                                     <div class="ui checkbox">
                                         <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Я согласен с условиями</label>
+                                        <label>{{$t('label-agree')}}</label>
                                     </div>
-                                    <p class="disclaimer">Нажимая на эту кнопку, я даю согласие
-                                        на обработку <a href="#">персональных данных</a>.</p>
+                                    <p class="disclaimer">{{$t('label-agree-dsclmr')}} <a href="#">{{$t('label-pers-data')}}</a>.</p>
                                 </div>
                                 <div class="send-button-box">
-                                    <button class="ntx-button rounded solid-white" type="submit">Отправить</button>
+                                    <button class="ntx-button rounded solid-white" type="submit">{{$t('button-send')}}</button>
                                 </div>                              
                             </div>
                         </form>
@@ -580,39 +539,51 @@
                     <div class="column">
                         <form class="ui form">
                             <div class="field required">
-                                <label>Ваше имя</label>
+                                <label>{{$t('label-name')}}</label>
                                 <input type="text" name="first-name" required placeholder="Имя">
                             </div>
                             <div class="field required">
-                                <label>Желаемая должность</label>
+                                <label>{{$t('Preferred position')}}</label>
                                 <!--Source: https://semantic-ui.com/modules/dropdown.html#selection -->
                                 <div class="ui fluid selection dropdown">
                                     <input type="hidden" name="job-type">
                                     <i class="dropdown icon"></i>
-                                    <div class="default text">Выберите должность</div>
+                                    <div class="default text">{{$t('Select-position')}}</div>
                                     <div class="menu">
-                                        <div class="item" data-value="frontend">
-                                            Фронтенд-разработчик
+                                        <div class="item" data-value="fe">
+                                            {{$t('vacancy-fe')}}
                                         </div>
-                                        <div class="item" data-value="backend">
-                                            Бэкенд-разработчик
+                                        <div class="item" data-value="be">
+                                            {{$t('vacancy-be')}}
                                         </div>
                                         <div class="item" data-value="pm">
-                                            Менеджер проектов
+                                            {{$t('vacancy-pm')}}
+                                        </div>
+                                        <div class="item" data-value="devops">
+                                            {{$t('vacancy-devops')}}
+                                        </div>
+                                        <div class="item" data-value="qa">
+                                            {{$t('vacancy-qa')}}
+                                        </div>
+                                        <div class="item" data-value="ios">
+                                            {{$t('vacancy-mobile-ios')}}
+                                        </div>
+                                        <div class="item" data-value="android">
+                                            {{$t('vacancy-mobile-android')}}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="field">
-                                <label>Телефон</label>
+                                <label>{{$t('your-phone')}}</label>
                                 <input type="text" name="first-name" placeholder="В любом формате">
                             </div>
                             <div class="field">
-                                <label>Электронная почта</label>
+                                <label>{{$t('label-mail')}}</label>
                                 <input type="text" name="last-name" placeholder="email@box.com">
                             </div>
                             <div class="field">
-                                <label>Прикрепите файл(ы) резюме, если есть:</label>
+                                <label>{{$t('attach-file')}}</label>
                                 <!-- Source: http://jsfiddle.net/Dr_Dev/2nu1ngk5 -->
                                 <div class="ui action input">
                                     <input type="text" placeholder="Файл не выбраны" readonly>
@@ -632,13 +603,12 @@
                                 <div class="disclaimer-box">
                                     <div class="ui checkbox">
                                         <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Я согласен с условиями</label>
+                                        <label>{{$t('label-agree')}}</label>
                                     </div>
-                                    <p class="disclaimer">Нажимая на эту кнопку, я даю согласие
-                                        на обработку <a href="#">персональных данных</a>.</p>
+                                    <p class="disclaimer">{{$t('label-agree-dsclmr')}} <a href="#">{{$t('label-pers-data')}}</a>.</p>
                                 </div>
                                 <div class="send-button-box">
-                                    <button class="ntx-button rounded solid-white" type="submit">Отправить</button>
+                                    <button class="ntx-button rounded solid-white" type="submit">{{$t('button-send')}}</button>
                                 </div>                              
                             </div>                            
                         </form>
@@ -650,7 +620,7 @@
     <footer id="contacts">
         <div class="ui stackable three columns grid">
             <div class="column phone"><p>+7 (921) 228-20-17 <br> info@natlex.ru</p></div>
-            <div class="column address"> <p>ООО «Натлекс» <br> улица Кирова, 8Б <br> 185035 Петрозаводск Россия</p></div>
+            <div class="column address"> <p v-html="$t('column-adress')"></p></div>
             <div class="column social-icons">
 
                 <div class="ui icon secondary menu">
