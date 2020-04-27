@@ -815,9 +815,15 @@ article.jobs {
         font-family: $secondary-font;
         font-weight: 500;
     }
+    .ui.selection.dropdown {
+        display: none;
+    }
     .socials {
         padding-left: 38px;
         margin-top: 60px;
+        position: absolute;
+        left: 0;
+        bottom: 66px;
         &.mobile {
             display: none;
         }
@@ -835,9 +841,16 @@ article.jobs {
     .tab {
         &-wrapper {
             justify-content: center;
+            position: relative;
             .column {
                 &:first-child {padding-right: 0;}
                 &:last-child {padding-left: 0;}
+            }
+            div.ui.grid>.row>[class*="four wide"].column {
+                width: 31.25%!important;
+            }
+            div.ui.grid>.row>[class*="twelve wide"].column {
+                width: 68.75%!important;
             }
             .ui.vertical.tabular.menu {
                 border-right: none;
@@ -908,43 +921,6 @@ article.jobs {
                     color: $text-semiblack;
                     &:last-child {margin-bottom: 0}
                 }
-
-                #fe-vacancy {
-                    display: block;
-                }
-
-                #be-vacancy {
-                    display: none;
-                }
-
-                #pm-vacancy {
-                    display: none;
-                }
-
-                #devops-vacancy {
-                    display: none;
-                }
-
-                #qa-vacancy {
-                    display: none;
-                }
-
-                #ios-vacancy {
-                    display: none;
-                }
-
-                #android-vacancy {
-                    display: none;
-                }
-
-                // Интерна пока не задействуем. Описания у нас нет. 
-                #intern-vacancy {
-                    display: none;
-                }
-        
-
-
-
             }
         }
     }
@@ -958,9 +934,24 @@ article.jobs {
             font-size: 1.5rem;
             margin-bottom: 2.5rem;
         }
+        .tab-wrapper {
+            div.ui.grid > .row > [class*="four wide"].column {
+                display: none;
+            }
+            div.ui.grid > .row > [class*="twelve wide"].column {
+                width: 100% !important;
+                padding-left: 1rem;
+            }
+        }
+        .ui.selection.dropdown {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
         .vacancy-select-mobile {
             display: block;
             text-align: center;
+            width: 100%;
             select {
                 border: 1px solid #E0E1E2;
                 height: 36px;
@@ -975,12 +966,12 @@ article.jobs {
             display: none;
         }
         .socials {
-            display: none;
-            padding: 0 1rem;
-            &.mobile {
-                display: flex;
-                margin-top: 34px;
-            }
+            display: flex;
+            margin-top: 34px;
+            position: relative;
+            bottom: 0;
+            justify-content: center;
+            padding: 0;
         }
         .tab-wrapper .tab-body {
             box-shadow: none;
@@ -993,8 +984,6 @@ article.jobs {
                 overflow: visible;
 
             }
-
-            
         }
 
         
@@ -1012,7 +1001,7 @@ article.jobs {
             content: '';
             position: absolute;
             top: 0;
-            bottom: 30%;
+            bottom: 0%;
             left: 0;
             right: 0;
             background: #f9fafb;
