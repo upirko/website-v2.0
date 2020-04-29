@@ -277,167 +277,151 @@
 
         <article id="jobs" class="jobs">
             <h2 class="ui center aligned header">{{$t('join-header')}}</h2>
-            <div class="ui content container">
-                <div class="ui stackable two columns grid tab-wrapper">
-                    <div class="five wide column">
-                        <div class="vacancy-select-mobile">
-                            <select name="" id="">
-                                <option value="">{{$t('vacancy-fe')}}</option>
-                                <option value="">{{$t('vacancy-be')}}</option>
-                                <option value="">{{$t('vacancy-pm')}}</option>
-                                <option value="">{{$t('vacancy-devops')}}</option>
-                                <option value="">{{$t('vacancy-qa')}}</option>
-                                <option value="">{{$t('vacancy-mobile-ios')}}</option>
-                                <option value="">{{$t('vacancy-mobile-android')}}</option>
-                                <option value="">{{$t('vacancy-intern')}}</option>
-                            </select>
-                        </div>
-                        <div class="ui vertical fluid tabular menu">
-                            <a class="active item">
-                                <span>{{$t('vacancy-fe')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-be')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-pm')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-devops')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-qa')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-mobile-ios')}}</span>
-                            </a>
-                            <a class="item">
-                                <span>{{$t('vacancy-mobile-android')}}</span>
-                            </a>
-                                <!--<a class="item">
-                                <span>{{$t('vacancy-intern')}}</span>
-                            </a> 
-                            Пока скрыл таб для стажеров, т.к. нет описания и не понятно - будем ли размещать его -->
-                            
-                        </div>
-                        <div class="socials flex flex-x">
-                            <a href="https://petrozavodsk.hh.ru/employer/2713625" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
-                            <a href="https://career.habr.com/companies/natlex" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
-                            <a href="https://tt.linkedin.com/company/natlex-ltd" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="ten wide stretched column">
-                        <div class="ui segment tab-body">
-                            <div id = "fe-vacancy" class="tab-body-content">
+            <div class="ui content container tab-wrapper">
+                <template class="vacancy-select-mobile" lang="html">
+                    <sui-dropdown
+                            @input="onChange($event)"
+                            direction="downward"
+                            v-bind:placeholder="vacancyDropdown.placeholder"
+                            selection
+                            :options="vacancyDropdown.options"
+                            v-model="vacancyDropdown.current"
+                    />
+                </template>
+                <sui-tab :activeIndex="vacancyDropdown.current"
+                         :menu="{ vertical: true, fluid: true, tabular: true }">
+                        <sui-tab-pane class="active item tab-body" v-bind:title="$t('vacancy-fe')">
+                            <div id="fe-vacancy" class="tab-body-content">
                                 <h4>{{$t('fe-descr-h-1')}}</h4>
                                 <p>{{$t('fe-descr-text-1')}}</p>
 
                                 <h4>{{$t('fe-descr-h-2')}}</h4>
                                 <p v-html="$t('fe-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('fe-descr-h-3')}}</h4>
                                 <p v-html="$t('fe-descr-text-3')"></p>
-                                
+
                                 <h4>{{$t('fe-descr-h-4')}}</h4>
                                 <p v-html="$t('fe-descr-text-4')"></p>
-                                
+
                             </div>
-                            <div id = "be-vacancy" class="tab-body-content">
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-be')">
+                            <div id="be-vacancy" class="tab-body-content">
                                 <h4>{{$t('be-descr-h-1')}}</h4>
                                 <p>{{$t('be-descr-text-1')}}</p>
 
                                 <h4>{{$t('be-descr-h-2')}}</h4>
                                 <p v-html="$t('be-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('be-descr-h-3')}}</h4>
                                 <p v-html="$t('be-descr-text-3')"></p>
-                                
+
                                 <h4>{{$t('be-descr-h-4')}}</h4>
                                 <p v-html="$t('be-descr-text-4')"></p>
-                                
+
                             </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-pm')">
                             <div id = "pm-vacancy" class="tab-body-content">
                                 <h4>{{$t('pm-descr-h-1')}}</h4>
                                 <p v-html="$t('pm-descr-text-1')"></p>
 
                                 <h4>{{$t('pm-descr-h-2')}}</h4>
                                 <p v-html="$t('pm-descr-text-2')"></p>
-                                    
-                                <h4>{{$t('pm-descr-h-3')}}</h4>
-                                <p v-html="$t('pm-descr-text-3')"></p>                          
-                            </div>
 
+                                <h4>{{$t('pm-descr-h-3')}}</h4>
+                                <p v-html="$t('pm-descr-text-3')"></p>
+                            </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-devops')">
                             <div id = "devops-vacancy" class="tab-body-content">
                                 <h4>{{$t('devops-descr-h-1')}}</h4>
                                 <p v-html="$t('devops-descr-text-1')"></p>
 
                                 <h4>{{$t('devops-descr-h-2')}}</h4>
                                 <p v-html="$t('devops-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('devops-descr-h-3')}}</h4>
                                 <p v-html="$t('devops-descr-text-3')"></p>
-                                                       
-                            </div>
 
-                            
+                            </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-qa')">
                             <div id = "qa-vacancy" class="tab-body-content">
                                 <h4>{{$t('qa-descr-h-1')}}</h4>
                                 <p v-html="$t('qa-descr-text-1')"></p>
 
                                 <h4>{{$t('qa-descr-h-2')}}</h4>
                                 <p v-html="$t('qa-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('qa-descr-h-3')}}</h4>
                                 <p v-html="$t('qa-descr-text-3')"></p>
-                                
+
                                 <h4>{{$t('qa-descr-h-4')}}</h4>
                                 <p v-html="$t('qa-descr-text-4')"></p>
-                                
+
                             </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-mobile-ios')">
                             <div id = "ios-vacancy" class="tab-body-content">
                                 <h4>{{$t('ios-descr-h-1')}}</h4>
                                 <p>{{$t('ios-descr-text-1')}}</p>
 
                                 <h4>{{$t('ios-descr-h-2')}}</h4>
                                 <p v-html="$t('ios-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('ios-descr-h-3')}}</h4>
                                 <p v-html="$t('ios-descr-text-3')"></p>
-                                
+
                                 <h4>{{$t('ios-descr-h-4')}}</h4>
                                 <p v-html="$t('ios-descr-text-4')"></p>
-                                
-                                
+
+
                             </div>
+                            <div class="vacancy-button-wrapper">
+                                <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
+                            </div>
+                        </sui-tab-pane>
+                        <sui-tab-pane class="item tab-body" v-bind:title="$t('vacancy-mobile-android')">
                             <div id = "android-vacancy" class="tab-body-content">
                                 <h4>{{$t('android-descr-h-1')}}</h4>
                                 <p>{{$t('android-descr-text-1')}}</p>
 
                                 <h4>{{$t('android-descr-h-2')}}</h4>
                                 <p v-html="$t('android-descr-text-2')"></p>
-                                    
+
                                 <h4>{{$t('android-descr-h-3')}}</h4>
                                 <p v-html="$t('android-descr-text-3')"></p>
-                                
+
                                 <h4>{{$t('android-descr-h-4')}}</h4>
                                 <p v-html="$t('android-descr-text-4')"></p>
-                                
-                            </div>
-                            <div id = "intern-vacancy" class="tab-body-content">
-                                  <!-- Скрыл таб для этого блока. Описания для стажера у нас нет. Может вернем в будущем  -->
-                            </div>
 
-
+                            </div>
                             <div class="vacancy-button-wrapper">
                                 <button class="vacancy-button ntx-button rounded light-green-gd lw">{{$t('button-apply')}}</button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="socials flex flex-x mobile">
-                        <a href="" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
-                        <a href="" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
-                        <a href="" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
-                    </div>
+                        </sui-tab-pane>
+                    </sui-tab>
+                <div class="socials flex flex-x">
+                    <a href="https://petrozavodsk.hh.ru/employer/2713625" class="socials__item"><img src="../assets/images/icon-hh.svg" alt=""></a>
+                    <a href="https://career.habr.com/companies/natlex" class="socials__item"><img src="../assets/images/icon-habr.svg" alt=""></a>
+                    <a href="https://tt.linkedin.com/company/natlex-ltd" class="socials__item"><img src="../assets/images/icon-linkedin.svg" alt=""></a>
                 </div>
             </div>
         </article>
@@ -648,7 +632,41 @@ export default {
             ],
             limitPosition: 64,
             scrolled: false,
-            lastPosition: 0
+            lastPosition: 0,
+            vacancyDropdown: {
+                placeholder: this.$i18n.t('join-header'),
+                current: 0,
+                options: [
+                    {
+                        text: this.$i18n.t('vacancy-fe'),
+                        value: 0,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-be'),
+                        value: 1,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-pm'),
+                        value: 2,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-devops'),
+                        value: 3,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-qa'),
+                        value: 4,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-mobile-ios'),
+                        value: 5,
+                    },
+                    {
+                        text: this.$i18n.t('vacancy-mobile-android'),
+                        value: 6,
+                    },
+                ],
+            }
         }
     },
     computed: {
@@ -663,6 +681,9 @@ export default {
 
         handleScroll() {
             this.scrolled = this.limitPosition < window.scrollY;
+        },
+        onChange(e) {
+            console.log(e)
         }
     },
     
