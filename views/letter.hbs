@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Заявка с сайта</title>
+</head>
+<body>
+  <table>
+    {{#if name}}
+    <tr>
+      <th style="text-align: right;">Имя:</th>
+      <td>{{name}}</td>
+    </tr>
+    {{/if}}
+    {{#if position}}
+    <tr>
+      <th style="text-align: right;">Должность:</th>
+      <td>{{position}}</td>
+    </tr>
+    {{/if}}
+    {{#if phone}}
+    <tr>
+      <th style="text-align: right;">Телефон:</th>
+      <td>{{phone}}</td>
+    </tr>
+    {{/if}}
+    {{#if email}}
+    <tr>
+      <th style="text-align: right;">Email:</th>
+      <td>{{email}}</td>
+    </tr>
+    {{/if}}
+    {{#if message}}
+    <tr>
+      <th style="text-align: right;">Message:</th>
+      <td>{{message}}</td>
+    </tr>
+    {{/if}}
+  </table>
+</body>
+</html>
