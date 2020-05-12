@@ -1080,17 +1080,10 @@ article.jobs {
         margin-right: auto;
     }
 
-    
-
-    
-    
-
     @media screen and (min-width: 768px) {
         &, &.inverted.segment {
             padding-top: 6rem;
             padding-bottom: 6rem;
-
-
             .expect {
                 display:flex!important;
                 justify-content: flex;
@@ -1181,41 +1174,6 @@ article.jobs {
             border-radius: 0 .28571429rem .28571429rem 0;
         }
     }
-    // .input.attach {
-    //     // border-radius: 0.25em;
-    //     // border: 1px solid $text-white;
-    //     // cursor: pointer;
-    //     // font-size: 0.9rem;
-    //     input[type="file"] {
-    //         // opacity: 0;
-    //         background-color: rgba(0, 0, 0, 0);
-    //         border-color: $text-white;
-    //         color: rgba(0 ,0 , 0, 0);
-    //     }
-    //     & > .icon {
-    //         background-color: $text-white;
-    //         color: $text-green;
-    //         opacity: 1;
-    //     }
-    // }
-    // .ui.action.input {
-    //     input[type="file"] {
-    //         display: none;
-    //     }
-    //     input[type="text"] {
-    //         background-color: transparent;
-    //         border-color: $text-white;
-    //         &::placeholder {
-    //             color: $text-white;
-    //         }
-    //     }
-    // }
-    // .attachment-suffix {
-    //     padding: 0.75rem;
-    //     background-color: $text-white;
-    //     color: $text-green;
-    //     border-radius: 0 4px 4px 0;
-    // }
     .aligner {
         height: 100%;
         display: flex;
@@ -1260,23 +1218,27 @@ article.jobs {
         }
         &.position {
             position: relative;
-            input[type=text]{
-                touch-action: none;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 0;
-                height: 0;
-                opacity: 0;
-            }
+        }
+        input.hidden {
+            touch-action: none;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            opacity: 0;
         }
     }
     .captcha-box {
+        position: relative;
         padding: 1rem;
         background-color: rgba($text-white, 0.2);        
         @media screen and (max-width: 767px) {
             margin-left: -1rem;
             margin-right: -1rem;
+        }
+        input.hidden {
+            bottom: 1rem;
         }
     }
     .agreement-check {

@@ -467,59 +467,20 @@
 
         <article id="feedback" class="feedback">
             <div class="ui content container">
-                <div class="ui secondary menu" role="menu">
-                    <a href="#" class="item" :class="{active: currentForm == 'message'}" @click.prevent="currentForm = 'message'">{{$t('button-write-message')}}</a>
-                    <a href="#" class="item" :class="{active: currentForm == 'vacancy'}" @click.prevent="currentForm = 'vacancy'">{{$t('button-send-CV')}}</a>                    
-                </div>
+                <sui-menu secondary>
+                    <sui-menu-item :active="currentForm == 'message'" link @click.prevent="currentForm = 'message'">
+                        {{$t('button-write-message')}}
+                    </sui-menu-item>
+                    <sui-menu-item :active="currentForm == 'vacancy'" link @click.prevent="currentForm = 'vacancy'">
+                        {{$t('button-send-CV')}}
+                    </sui-menu-item>
+                </sui-menu>
                
-    
-                <section class="ui stackable two column grid contacts" v-show="currentForm == 'message'">
-                    <div class="column">
-                        <sui-form @submit.prevent="sendRequest">
-                            <sui-form-field required>
-                                <label>{{$t('label-name')}}</label>
-                                <sui-input :placeholder="$t('label-name')" :disabled="sending" name="name" required v-model="request.name" />
-                            </sui-form-field>
-                            <sui-form-field>
-                                <label>{{$t('your-phone')}}</label>
-                                <sui-input :placeholder="$t('your-phone')" :disabled="sending" type="tel" name="phone" v-model="request.phone" />
-                            </sui-form-field>
-                            <sui-form-field>
-                                <label>{{$t('label-mail')}}</label>
-                                <sui-input :placeholder="$t('label-mail')" :disabled="sending" type="email" name="email" v-model="request.email" />
-                            </sui-form-field>
-                            <sui-form-field required>
-                                <label>{{$t('label-message')}}</label>
-                                <textarea name="user-message" cols="30" rows="10" required placeholder="Ваше сообщение" v-model="request.message"></textarea>   
-                            </sui-form-field>
-                            <!-- <div class="captcha-box">
-                                <div style="background: #fff; height: 75px; padding: 1rem; color: black; text-align: center;">google captcha</div>
-                            </div> -->
-                            <div class="field agreement-check">
-                                <div class="disclaimer-box">
-                                    <div class="ui checkbox">
-                                        <input id="agreement-checkbox" type="checkbox" name="agreement-checkbox" required />
-                                        <label for="agreement-checkbox">{{$t('label-agree')}}</label>
-                                    </div>
-                                    <p class="disclaimer">{{$t('label-agree-dsclmr')}} <a href="#">{{$t('label-pers-data')}}</a>.</p>
-                                </div>
-                                <div class="send-button-box">
-                                    <sui-button :loading="sending" :disabled="sending" class="ntx-button rounded solid-white" type="submit">{{$t('button-send')}}</sui-button>
-                                </div>                              
-                            </div>
-                        </sui-form>
-                    </div>
+                <section class="ui stackable two column grid" :class="{cv: currentForm == 'vacancy', 'contacts computer reversed tablet reversed': currentForm == 'message'}">
                     <div class="column">
                         <div class="aligner">
-                            <img src="../assets/images/bg-request-people-right.svg" alt="">
-                        </div>
-                    </div>
-                </section>
-    
-                <section class="ui stackable two column grid cv" v-show="currentForm == 'vacancy'">
-                    <div class="column">
-                        <div class="aligner">
-                            <img src="../assets/images/bg-request-people-left.svg" alt="">
+                            <img v-if="currentForm == 'vacancy'" src="../assets/images/bg-request-people-left.svg" alt="">
+                            <img v-if="currentForm == 'message'" src="../assets/images/bg-request-people-right.svg" alt="">
                         </div>
                     </div>
                     <div class="column">
@@ -528,8 +489,8 @@
                                 <label>{{$t('label-name')}}</label>
                                 <sui-input :placeholder="$t('label-name')" :disabled="sending" name="name" required v-model="request.name" />
                             </sui-form-field>
-                            <sui-form-field required class="position">
-                                <input type="text" v-model="request.position" required>
+                            <sui-form-field required class="position" v-if="currentForm == 'vacancy'">
+                                <input class="hidden" type="text" v-model="request.position" required>
                                 <label>{{$t('Preferred-position')}}</label>
                                 <sui-dropdown
                                     :placeholder="$t('Select-position')"
@@ -549,18 +510,26 @@
                                 <label>{{$t('label-mail')}}</label>
                                 <sui-input :placeholder="$t('label-mail')" :disabled="sending" type="email" name="email" v-model="request.email" />
                             </sui-form-field>
-                            <div class="field">
+                            <sui-form-field v-if="currentForm == 'vacancy'">
                                 <label>{{$t('attach-file')}}</label>
                                 <div class="ui icon input attachment">
-                                    <input type="text" :value="attachmentName" readonly="readonly">
+                                    <input type="text" :value="attachmentName" readonly />
                                     <i class="attach icon"></i>
                                     <input type="file" :disabled="sending" @change="addAttachment" name="attachment" />
                                 </div>
-                            </div>
-                            
-                            <!-- <div class="captcha-box">
-                                 <div style="background: #fff; height: 75px; padding: 1rem; color: black; text-align: center;">google captcha</div>
-                            </div> -->
+                            </sui-form-field>
+                            <sui-form-field required  v-if="currentForm == 'message'">
+                                <label>{{$t('label-message')}}</label>
+                                <textarea name="user-message" cols="30" rows="10" required placeholder="Ваше сообщение" v-model="request.message"></textarea>   
+                            </sui-form-field>
+                            <sui-form-field class="captcha-box">
+                                <input class="hidden" type="text" :value="request.token" required />
+                                <vue-recaptcha
+                                    ref="recaptcha"
+                                    @verify="setCaptchaToken"
+                                    :sitekey="sitekey"
+                                />
+                            </sui-form-field>
                             <div class="field agreement-check">
                                 <div class="disclaimer-box">
                                     <div class="ui checkbox">
@@ -598,9 +567,13 @@
 </template>
 
 <script>
+import VueRecaptcha from 'vue-recaptcha';
+
 export default {
+    components: { VueRecaptcha },
     data() {
         return {
+            sitekey: process.env.VUE_APP_RECAPTCHA_SITEKEY || '',
             langs: [
                 {locale: 'ru', label: 'Rus'},
                 {locale: 'en', label: 'Eng'},
@@ -647,7 +620,8 @@ export default {
                 email: null,
                 phone: null,
                 attachment: null,
-                message: null
+                message: null,
+                token: null
             },
             sending: false
         }
@@ -669,6 +643,7 @@ export default {
             this.scrolled = this.limitPosition < window.scrollY;
         },
         sendRequest() {
+            if (!this.request.token) return;
             const formData = new FormData();
             for (let field of Object.keys(this.request)) {
                 if (!this.request[field]) continue;
@@ -696,6 +671,9 @@ export default {
         },
         addAttachment(e) {
             this.request.attachment = e.target.files[0];
+        },
+        setCaptchaToken(token) {
+            this.request.token = token;
         }
     },
     

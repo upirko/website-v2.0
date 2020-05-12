@@ -10,5 +10,6 @@ module.exports = {
       from:  process.env.emailFrom || '',
       to:  process.env.emailTo || ''
     }
-  }
+  },
+  reCaptchaSecretKey: process.env.reCaptchaSecretKey || ''
 };
