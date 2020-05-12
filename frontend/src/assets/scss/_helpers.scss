@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+    &-x {
+        flex-direction: row;
+        align-items: center;
+    }
+    &-y {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-c {
+        align-content: center;
+        justify-content: center;
+    }
+    &-nowrap {
+        flex-wrap: nowrap;
+    }
+    &-grow {
+        flex: 1 0 auto;
+    }
+    &-shrink {
+        flex-shrink: 0 1 auto;
+    }
+}
