@@ -3,12 +3,12 @@ module.exports = {
   mail: {
     host: process.env.mailHost || 'smtp.yandex.ru',
     port: process.env.mailPort || 465,
-    user: process.env.mailUser || 'upirko',
-    pass: process.env.mailPass || 'nitDikcyg',
+    user: process.env.mailUser || '',
+    pass: process.env.mailPass || '',
     uploadsDir: process.env.mailUploadsDir || 'uploads/',
     emailOptions: {
-      from:  process.env.emailFrom || 'upirko@ya.ru',
-      to:  process.env.emailTo || 'aleksandr.tihohod@natlex.ru'
+      from:  process.env.emailFrom || '',
+      to:  process.env.emailTo || ''
     }
   }
 };
