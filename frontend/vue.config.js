@@ -1,6 +1,5 @@
 module.exports = {
   lintOnSave: false,
-  outputDir: '../public',
   pluginOptions: {
     i18n: {
       locale: 'ru',
