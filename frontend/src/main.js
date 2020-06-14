@@ -14,6 +14,9 @@ import VueAxios from 'vue-axios'
 axios.defaults.baseURL = process.env.VUE_APP_BACKEND_URL || window.location.origin;
 Vue.use(VueAxios, axios)
 
+import Vue2TouchEvents from 'vue2-touch-events'
+Vue.use(Vue2TouchEvents)
+
 Vue.config.productionTip = false
 
 new Vue({

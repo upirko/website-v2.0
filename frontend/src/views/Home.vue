@@ -201,48 +201,21 @@
                     </div>
                 </div>
             </section>
-            <section id="tech" class="technology flex flex-x">
+            <section id="tech" class="technology flex flex-x" :style="{'--page': currentPage}">
                 <div class="technology-main flex flex-x">
                     <div class="technology-main-text">
                         <h2>{{$t('tech1-h')}}</h2>
                         <p>{{$t('tech2-h')}}</p>
                     </div>
                 </div>
-                <div class="technology-block flex">
-                    <div class="technology-list">
-                        <div class="technology-list__item"><img src="../assets/images/technologies/frontend/js.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/frontend/angular.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/frontend/html.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/frontend/sass.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/frontend/nodejs.svg" alt=""></div>
+                <div class="technology-block">
+                    <div class="technology-wrapper" v-touch:swipe="carouselSwipe">
+                        <div class="technology-item" v-for="tech in technologies">
+                            <img :src="tech" alt="">
+                        </div>
                     </div>
-                    <div class="technology-list">
-                        <div class="technology-list__item"><img src="../assets/images/technologies/backend/java.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/backend/mongo.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/backend/postgresql.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/backend/redis.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/backend/autodesk.svg" alt=""></div>
-                    </div>
-                    <div class="technology-list">
-                        <div class="technology-list__item"><img src="../assets/images/technologies/mobile/kotlin.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/mobile/swift.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/mobile/firebase.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/mobile/rxjava.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/mobile/dagger.svg" alt=""></div>
-                    </div>
-                    <div class="technology-list">
-                        <div class="technology-list__item"><img src="../assets/images/technologies/devops/git.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/devops/kubernetes.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/devops/docker.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/devops/helm.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/devops/prometheus.svg" alt=""></div>
-                    </div>
-                    <div class="technology-list">
-                        <div class="technology-list__item"><img src="../assets/images/technologies/testing/selenium.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/testing/jmeter.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/testing/zalenium.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/testing/test-ng.svg" alt=""></div>
-                        <div class="technology-list__item"><img src="../assets/images/technologies/testing/allure.svg" alt=""></div>
+                    <div class="technology-pagination">
+                        <button type="button" v-for="(_, index) in pages" @click="setCarouselPage(index)" :class="{active: index == currentPage}"></button>
                     </div>
                 </div>
             </section>
@@ -579,6 +552,34 @@ export default {
                 {locale: 'en', label: 'Eng'},
                 {locale: 'de', label: 'Ger'}
             ],
+            technologies: [
+                require('../assets/images/technologies/frontend/js.svg'),
+                require('../assets/images/technologies/frontend/angular.svg'),
+                require('../assets/images/technologies/frontend/html.svg'),
+                require('../assets/images/technologies/frontend/sass.svg'),
+                require('../assets/images/technologies/frontend/nodejs.svg'),
+                require('../assets/images/technologies/backend/java.svg'),
+                require('../assets/images/technologies/backend/mongo.svg'),
+                require('../assets/images/technologies/backend/postgresql.svg'),
+                require('../assets/images/technologies/backend/redis.svg'),
+                require('../assets/images/technologies/backend/autodesk.svg'),
+                require('../assets/images/technologies/mobile/kotlin.svg'),
+                require('../assets/images/technologies/mobile/swift.svg'),
+                require('../assets/images/technologies/mobile/firebase.svg'),
+                require('../assets/images/technologies/mobile/rxjava.svg'),
+                require('../assets/images/technologies/mobile/dagger.svg'),
+                require('../assets/images/technologies/devops/git.svg'),
+                require('../assets/images/technologies/devops/kubernetes.svg'),
+                require('../assets/images/technologies/devops/docker.svg'),
+                require('../assets/images/technologies/devops/helm.svg'),
+                require('../assets/images/technologies/devops/prometheus.svg'),
+                require('../assets/images/technologies/testing/selenium.svg'),
+                require('../assets/images/technologies/testing/jmeter.svg'),
+                require('../assets/images/technologies/testing/zalenium.svg'),
+                require('../assets/images/technologies/testing/test-ng.svg'),
+                require('../assets/images/technologies/testing/allure.svg')
+            ],
+            currentPage: 0,
             limitPosition: 64,
             scrolled: false,
             lastPosition: 0,
@@ -632,6 +633,10 @@ export default {
         },
         attachmentName() {
             return this.request.attachment ? this.request.attachment.name : 'Файл не выбраны';
+        },
+        pages() {
+            const count = Math.ceil(this.technologies.length / 5);
+            return new Array(count);
         }
     },
     methods: {
@@ -674,6 +679,16 @@ export default {
         },
         setCaptchaToken(token) {
             this.request.token = token;
+        },
+        setCarouselPage(page) {
+            this.currentPage = Math.min(Math.max(page, 0), 4);
+        },
+        carouselSwipe(d) {
+            if (d == 'left') {
+                this.setCarouselPage(this.currentPage + 1);
+            } else if (d == 'right') {
+                this.setCarouselPage(this.currentPage - 1);
+            }
         }
     },
     
